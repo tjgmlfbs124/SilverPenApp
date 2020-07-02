@@ -167,10 +167,10 @@ public class BluetoothActivity extends AppCompatActivity {
 //                            BleManager.getInstance().cancelScan();
 //                            connect(bleDevice, "weeemake");
 //                        }
-//                        else if(bleDevice.getName().contains("camRobot") && !BleManager.getInstance().isConnected(bleDevice)){
-//                            BleManager.getInstance().cancelScan();
-//                            connect(bleDevice, "camRobot");
-//                        }
+                        else if(bleDevice.getName().contains("camRobot") && !BleManager.getInstance().isConnected(bleDevice)){
+                            BleManager.getInstance().cancelScan();
+                            connect(bleDevice, "camRobot");
+                        }
 //                        else if(bleDevice.getName().contains("eggBean") && !BleManager.getInstance().isConnected(bleDevice)){
 //                            BleManager.getInstance().cancelScan();
 //                            connect(bleDevice, "eggBean");
@@ -223,6 +223,7 @@ public class BluetoothActivity extends AppCompatActivity {
                         break;
                     case "camRobot" :
                         BluetoothSendManager.sendProtocol("ff060023");
+                        BluetoothSendManager.onNotify(getApplicationContext());
                         break;
                     case "weeemake" :
                         BluetoothSendManager.sendProtocol("ff23");

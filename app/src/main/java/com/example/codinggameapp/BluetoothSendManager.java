@@ -5,6 +5,7 @@ import android.bluetooth.BluetoothGattCharacteristic;
 import android.bluetooth.BluetoothGattService;
 import android.content.Context;
 import android.util.Log;
+import android.widget.Toast;
 
 import com.clj.fastble.BleManager;
 import com.clj.fastble.callback.BleNotifyCallback;
@@ -98,7 +99,7 @@ public class BluetoothSendManager {
                     Log.i( "ckw","notify BleException : " + exception );
                 }
 
-                @Override
+                /*@Override
                 public void onCharacteristicChanged(byte[] data) {
                     String str = new String(data, Charset.forName("UTF-8"));
                     String str1;
@@ -121,6 +122,14 @@ public class BluetoothSendManager {
                     Log.i("ckw", "elapsed time :"+result);
                     Log.i("ckw", "num :"+ num );
                     TestActivity.Alram(getContext, new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS").format(m_long), result, num);
+                }*/
+                public void onCharacteristicChanged(byte[] data) {
+                    String str = new String(data, Charset.forName("UTF-8"));
+                    String str1;
+
+                    //Toast mToast = Toast.makeText(getContext, str, Toast.LENGTH_SHORT);
+                    //mToast.show();
+                    Log.i("@ckw", "barcode: "+str);
                 }
             });
     }
