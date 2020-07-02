@@ -1,0 +1,91 @@
+[
+  {
+    "type": "base_delay",
+    "message0": "기다리기 %1 초  ",
+    "args0": [{
+      "type": "input_value",
+      "name": "DELAY_TIME",
+      "check": "Number",
+      "align": "RIGHT"
+    }],
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#17a6d1",
+    "helpUrl": "http://www.tathink.com"
+  },
+  {
+    "type": "weeemake_motor",
+    "message0": "모터 제어 %1 %2 ",
+    "args0": [{
+      "type": "field_dropdown",
+      "name": "DIRECTION",
+      "options": [
+        ["앞으로", "00"],
+        ["뒤로", "01"],
+        ["왼쪽", "02"],
+        ["뒤로", "03"],
+        ["정지", "04"]
+      ]
+    },{
+      "type": "field_dropdown",
+      "name": "SPEED",
+      "options": [
+        ["매우빠르게", "ff"],
+        ["빠르게", "b4"],
+        ["보통", "7d"],
+        ["느리게", "50"],
+        ["매우느리게", "30"]
+      ]
+    }],
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#00b6b1",
+    "helpUrl": "http://www.tathink.com"
+  },
+  {
+    "type": "weeemake_buzzer",
+    "message0": "부저 음계 %1 %2 ",
+    "args0": [{
+      "type": "field_dropdown",
+      "name": "FREQUENCY",
+      "options": [
+        ["도", "00"],
+        ["레", "01"],
+        ["미", "02"],
+        ["파", "03"],
+        ["솔", "04"],
+        ["라", "05"],
+        ["시", "06"],
+        ["도", "07"]
+      ]
+    },{
+      "type": "field_dropdown",
+      "name": "ACTION",
+      "options": [
+        ["켜기", "01"],
+        ["끄기", "00"]
+      ]
+    }],
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#00b6b1",
+    "helpUrl": "http://www.tathink.com"
+  },
+  {
+    "type": "weeemake_boardRGB",
+    "message0": "보드 RGB %1 ",
+    "args0": [{
+      "type": "input_value",
+      "name": "COLOR",
+      "check": "Colour"
+    }],
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#00b6b1",
+    "helpUrl": "http://www.tathink.com"
+  }
+]

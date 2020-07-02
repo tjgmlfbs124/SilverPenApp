@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tabHolder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/category_icon"
+        android:layout_width="15dp"
+        android:layout_height="40dp"
+        android:background="#000000"
+        android:orientation="horizontal">
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/category_label"
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/material_grey_600"
+        android:gravity="center"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+</LinearLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<TextView xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:paddingRight="5dp"-->
+    <!--android:paddingLeft="5dp"-->
+    <!--android:textSize="@dimen/category_tab_font_size"-->
+    <!--android:textColor="@color/material_grey_600"-->
+    <!--android:maxLines="1"-->
+    <!--android:singleLine="true"-->
+    <!--/>-->

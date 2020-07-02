@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenuActivity"
+    tools:ignore="missingPrefix"
+    android:background="@drawable/bluetooth_background">
+
+    <com.example.codinggameapp.Utils.ScalableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:scale_base_width="1440"
+        app:scale_base_height="275"
+        android:background="@drawable/menu_layout_top_gradient">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="275"
+            app:scale_left="445"
+            app:scale_top="0"
+            app:scale_width="550"
+            app:srcCompat="@drawable/logo_color_white"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btn_ble"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="195"
+            app:scale_left="1243"
+            app:scale_top="35"
+            app:scale_width="140"
+            app:srcCompat="@drawable/bluetooth_white_on"/>
+    </com.example.codinggameapp.Utils.ScalableLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <com.example.codinggameapp.Utils.ScalableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_base_width="1440"
+                app:scale_base_height="1100">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="110"
+                    app:scale_left="132"
+                    app:scale_top="60"
+                    app:scale_width="110"
+                    app:srcCompat="@drawable/menu_icon_user_title"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text="회원 관리"
+                    android:textColor="#606060"
+                    android:textStyle="bold"
+                    app:scale_height="110"
+                    app:scale_left="260"
+                    app:scale_textsize="70"
+                    app:scale_top="60"
+                    app:scale_width="500"
+                    android:fontFamily="@font/nixgonf_bold"/>
+
+                <TextView
+                    android:id="@+id/btn_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|right"
+                    android:text="TEST"
+                    android:textColor="#606060"
+                    android:textStyle="bold"
+                    app:scale_height="110"
+                    app:scale_left="1100"
+                    app:scale_textsize="70"
+                    app:scale_top="60"
+                    app:scale_width="300"
+                    android:visibility="gone"
+                    android:fontFamily="@font/nixgonf_m"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/menu_sign_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="862"
+                    app:scale_left="80"
+                    app:scale_top="229"
+                    app:scale_width="763"
+                    app:srcCompat="@drawable/ic_login_background">
+
+                </androidx.appcompat.widget.AppCompatImageView>
+
+                <TextView
+                android:id="@+id/txt_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="로그인하기"
+                android:textColor="#000000"
+                android:fontFamily="@font/nixgonf_bold"
+                app:scale_height="125"
+                app:scale_left="125"
+                app:scale_textsize="100"
+                app:scale_top="269"
+                app:scale_width="500"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID &amp; Name"
+                android:textColor="#3c3c3c"
+                app:scale_height="80"
+                app:scale_left="140"
+                app:scale_textsize="60"
+                app:scale_top="400"
+                app:scale_width="300"/>
+
+                <FrameLayout
+                    android:id="@+id/menu_sign_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="412"
+                    app:scale_left="916"
+                    app:scale_top="229"
+                    app:scale_width="438"
+                    android:background="@drawable/menu_layout_border_yellow">
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="110"
+                    app:scale_left="960"
+                    app:scale_top="269"
+                    app:scale_width="300"
+                    app:scale_textsize="70"
+                    android:text="회원가입"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/nixgonf_m"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="60"
+                    app:scale_left="960"
+                    app:scale_top="380"
+                    app:scale_width="300"
+                    app:scale_textsize="50"
+                    android:text="간단인증"
+                    android:textColor="#606060"
+                    android:fontFamily="@font/nixgonf_m"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="110"
+                    app:scale_left="1230"
+                    app:scale_top="502"
+                    app:scale_width="110"
+                    app:srcCompat="@drawable/menu_icon_signup"/>
+
+
+                <FrameLayout
+                    android:id="@+id/menu_sign_03"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="412"
+                    app:scale_left="916"
+                    app:scale_top="677"
+                    app:scale_width="438"
+                    android:background="@drawable/menu_layout_border_black">
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="100"
+                    app:scale_left="960"
+                    app:scale_top="717"
+                    app:scale_width="380"
+                    app:scale_textsize="70"
+                    android:text="아이디찾기"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/nixgonf_m"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="100"
+                    app:scale_left="960"
+                    app:scale_top="820"
+                    app:scale_width="380"
+                    app:scale_textsize="50"
+                    android:text="비밀번호"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/nixgonf_m"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="110"
+                    app:scale_left="1230"
+                    app:scale_top="950"
+                    app:scale_width="110"
+                    app:srcCompat="@drawable/menu_icon_signin"/>
+
+            </com.example.codinggameapp.Utils.ScalableLayout>
+
+
+
+            <com.example.codinggameapp.Utils.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:scale_base_width="1440"
+                app:scale_base_height="590">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="110"
+                    app:scale_left="132"
+                    app:scale_top="30"
+                    app:scale_width="110"
+                    app:srcCompat="@drawable/menu_icon_user_title"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text="회원 정보"
+                    android:textColor="#606060"
+                    android:textStyle="bold"
+                    app:scale_height="110"
+                    app:scale_left="260"
+                    app:scale_textsize="68"
+                    app:scale_top="30"
+                    app:scale_width="500"
+                    android:fontFamily="@font/nixgonf_bold"/>
+
+                <FrameLayout
+                    android:id="@+id/menu_user_btn_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/menu_layout_border_black"
+                    app:scale_height="419"
+                    app:scale_left="132"
+                    app:scale_top="170"
+                    app:scale_width="539"></FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="회원정보"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    app:scale_height="125"
+                    app:scale_left="190"
+                    app:scale_top="209"
+                    app:scale_width="400"
+                    app:scale_textsize="80"
+                    android:fontFamily="@font/nixgonf_m" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="110"
+                    app:scale_left="516"
+                    app:scale_top="440"
+                    app:scale_width="110"
+                    app:srcCompat="@drawable/menu_icon_user"/>
+
+                <FrameLayout
+                    android:id="@+id/menu_user_btn_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="419"
+                    app:scale_left="776"
+                    app:scale_top="170"
+                    app:scale_width="539"
+                    android:background="@drawable/menu_layout_border_black">
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="125"
+                    app:scale_left="820"
+                    app:scale_top="200"
+                    app:scale_width="450"
+                    app:scale_textsize="80"
+                    android:text="기록 및 분석"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/nixgonf_m"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="110"
+                    app:scale_left="1180"
+                    app:scale_top="430"
+                    app:scale_width="110"
+                    app:srcCompat="@drawable/menu_icon_missionlist"/>
+
+            </com.example.codinggameapp.Utils.ScalableLayout>
+
+            <com.example.codinggameapp.Utils.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:scale_base_width="1440"
+                app:scale_base_height="600">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="110"
+                    app:scale_left="132"
+                    app:scale_top="30"
+                    app:scale_width="110"
+                    app:srcCompat="@drawable/menu_icon_user_title"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:text="코딩 프로그램"
+                    android:textColor="#606060"
+                    android:textStyle="bold"
+                    app:scale_height="110"
+                    app:scale_left="260"
+                    app:scale_textsize="68"
+                    app:scale_top="30"
+                    app:scale_width="500"
+                    android:fontFamily="@font/nixgonf_bold"/>
+
+                <FrameLayout
+                    android:id="@+id/menu_code_btn_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="400"
+                    app:scale_left="80"
+                    app:scale_top="170"
+                    app:scale_width="400"
+                    android:background="@drawable/menu_layout_border_white">
+                </FrameLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="자유코딩"
+                    android:textColor="#606060"
+                    android:textStyle="bold"
+                    app:scale_height="105"
+                    app:scale_left="80"
+                    app:scale_textsize="75"
+                    app:scale_top="430"
+                    app:scale_width="400"
+                    android:gravity="center"
+                    android:fontFamily="@font/nixgonf_m"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="200"
+                    app:scale_left="80"
+                    app:scale_top="190"
+                    app:scale_width="400"
+                    app:srcCompat="@drawable/menu_icon_coding"/>
+
+                <FrameLayout
+                    android:id="@+id/menu_code_btn_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="400"
+                    app:scale_left="530"
+                    app:scale_top="170"
+                    app:scale_width="400"
+                    android:background="@drawable/menu_layout_border_white">
+                </FrameLayout>
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="200"
+                    app:scale_left="530"
+                    app:scale_top="190"
+                    app:scale_width="400"
+                    app:srcCompat="@drawable/menu_icon_mission" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="미션"
+                    android:textColor="#606060"
+                    android:textStyle="bold"
+                    app:scale_height="105"
+                    app:scale_left="530"
+                    app:scale_textsize="75"
+                    app:scale_top="430"
+                    app:scale_width="400"
+                    android:gravity="center"
+                    android:fontFamily="@font/nixgonf_m"/>
+
+                <FrameLayout
+                    android:id="@+id/menu_code_btn_03"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="400"
+                    app:scale_left="973"
+                    app:scale_top="170"
+                    app:scale_width="400"
+                    android:background="@drawable/menu_layout_border_white">
+                </FrameLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="200"
+                    app:scale_left="973"
+                    app:scale_top="190"
+                    app:scale_width="400"
+                    app:srcCompat="@drawable/menu_icon_joystick"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="로봇조종"
+                    android:textColor="#606060"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    app:scale_height="105"
+                    app:scale_left="973"
+                    app:scale_textsize="75"
+                    app:scale_top="430"
+                    app:scale_width="400"
+                    android:fontFamily="@font/nixgonf_m" />
+            </com.example.codinggameapp.Utils.ScalableLayout>
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="center|bottom"-->
+<!--                android:text="Copyright 2020 TAThink. All Rights Reserved."-->
+<!--                android:fontFamily="@font/nixgonf_bold"-->
+<!--                android:textSize="10dp"-->
+<!--                android:textColor="#a0a0a0"/>-->
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

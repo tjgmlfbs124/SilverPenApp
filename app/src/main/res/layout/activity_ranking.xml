@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserMissionActivity"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:ignore="missingPrefix">
+
+    <com.example.codinggameapp.Utils.ScalableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:scale_base_width="1440"
+        app:scale_base_height="265"
+        android:background="#ffffff">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="275"
+            app:scale_left="445"
+            app:scale_top="0"
+            app:scale_width="550"
+            app:srcCompat="@drawable/logo_color_yellow"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="145"
+            app:scale_left="1243"
+            app:scale_top="60"
+            app:scale_width="145"
+            app:srcCompat="@drawable/signup_icon_home_yellow"/>
+
+    </com.example.codinggameapp.Utils.ScalableLayout>
+
+
+    <com.example.codinggameapp.Utils.ScalableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:scale_base_width="1920"
+        app:scale_base_height="300"
+        android:background="#e4eff8">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="150"
+            app:scale_left="100"
+            app:scale_top="80"
+            app:scale_width="150"
+            app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="150"
+            app:scale_left="300"
+            app:scale_top="80"
+            app:scale_width="1500"
+            app:scale_textsize="80"
+            android:text="명예의 전당"
+            android:textColor="#527c9a"
+            android:textStyle="bold"
+            android:gravity="left|center"/>
+    </com.example.codinggameapp.Utils.ScalableLayout>
+
+    <com.example.codinggameapp.Utils.ScalableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:scale_base_width="1920"
+        app:scale_base_height="250"
+        android:background="#c0c0c0">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/missionMenu01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="250"
+            app:scale_left="0"
+            app:scale_top="0"
+            app:scale_width="480"
+            android:background="#0071bb"
+            app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/missionMenu02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="250"
+            app:scale_left="480"
+            app:scale_top="0"
+            app:scale_width="480"
+            android:background="#13243e"
+            app:srcCompat="@android:drawable/sym_def_app_icon"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/missionMenu03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="250"
+            app:scale_left="960"
+            app:scale_top="0"
+            app:scale_width="480"
+            android:background="#13243e"
+            app:srcCompat="@android:drawable/sym_def_app_icon"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/missionMenu04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="250"
+            app:scale_left="1440"
+            app:scale_top="0"
+            app:scale_width="480"
+            android:background="#13243e"
+            app:srcCompat="@android:drawable/sym_def_app_icon"/>
+    </com.example.codinggameapp.Utils.ScalableLayout>
+</LinearLayout>

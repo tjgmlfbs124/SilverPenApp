@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".SignupActivity"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:ignore="missingPrefix">
+
+    <com.example.codinggameapp.Utils.ScalableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:scale_base_width="1440"
+        app:scale_base_height="265"
+        android:background="#ffffff">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="275"
+            app:scale_left="445"
+            app:scale_top="0"
+            app:scale_width="550"
+            app:srcCompat="@drawable/logo_color_yellow"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="145"
+            app:scale_left="1243"
+            app:scale_top="60"
+            app:scale_width="145"
+            app:srcCompat="@drawable/signup_icon_home_yellow"/>
+
+    </com.example.codinggameapp.Utils.ScalableLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|center"
+            android:orientation="vertical">
+
+            <com.example.codinggameapp.Utils.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:scale_base_width="1440"
+                app:scale_base_height="900">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="124"
+                    app:scale_left="29"
+                    app:scale_top="60"
+                    app:scale_width="116"
+                    app:srcCompat="@drawable/signup_icon_01"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="124"
+                    app:scale_left="145"
+                    app:scale_top="60"
+                    app:scale_width="550"
+                    app:scale_textsize="80"
+                    android:gravity="center"
+                    android:textColor="#1A1A1A "
+                    android:fontFamily="@font/nixgonf_bold"
+                    android:text="필수 입력정보" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="100"
+                    app:scale_left="125"
+                    app:scale_top="301"
+                    app:scale_width="230"
+                    app:scale_textsize="70"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#606060 "
+                    android:fontFamily="@font/nixgonf_m"
+                    android:text="아이디"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="70"
+                    app:scale_left="90"
+                    app:scale_top="260"
+                    app:scale_width="70"
+                    app:scale_textsize="70"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#fc5e03 "
+                    android:text="*"/>
+
+                <EditText
+                    android:id="@+id/edt_userID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="100"
+                    app:scale_left="375"
+                    app:scale_top="301"
+                    app:scale_width="560"
+                    app:scale_textsize="60"
+                    android:gravity="center|left"
+                    android:textColor="#1A1A1A "
+                    android:paddingLeft="10dp"
+                    android:inputType="textPersonName"
+                    android:fontFamily="@font/nixgonf_m"
+                    android:background="@drawable/login_layout_edit_background"/>
+
+                <TextView
+                    android:id="@+id/txt_comment_userID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="100"
+                    app:scale_left="375"
+                    app:scale_top="401"
+                    app:scale_width="965"
+                    app:scale_textsize="60"
+                    android:gravity="center|left"
+                    android:textColor="#606060 "
+                    android:fontFamily="@font/nixgonf_m"
+                    android:text="필수입력"/>
+
+                <TextView
+                    android:id="@+id/btn_idCheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="100"
+                    app:scale_left="1008"
+                    app:scale_top="301"
+                    app:scale_width="332"
+                    app:scale_textsize="65"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff "
+                    android:background="@drawable/signup_check"
+                    android:fontFamily="@font/nixgonf_m"
+                    android:text="중복확인"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="100"
+                    app:scale_left="125"
+                    app:scale_top="550"
+                    app:scale_width="230"
+                    app:scale_textsize="70"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#606060 "
+                    android:fontFamily="@font/nixgonf_m"
+                    android:text="이름"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="70"
+                    app:scale_left="90"
+                    app:scale_top="509"
+                    app:scale_width="70"
+                    app:scale_textsize="70"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#fc5e03 "
+                    android:text="*"/>
+
+                <EditText
+                    android:id="@+id/edt_userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_layout_edit_background"
+                    android:gravity="center|left"
+                    android:textColor="#1A1A1A "
+                    app:scale_height="100"
+                    app:scale_left="375"
+                    app:scale_textsize="60"
+                    app:scale_top="550"
+                    app:scale_width="965"
+                    android:inputType="textPersonName"
+                    android:fontFamily="@font/nixgonf_m"
+                    android:paddingLeft="10dp" />
+
+                <TextView
+                    android:id="@+id/txt_comment_userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text="필수입력"
+                    android:textColor="#606060 "
+                    app:scale_height="100"
+                    app:scale_left="375"
+                    app:scale_top="650"
+                    app:scale_width="965"
+                    app:scale_textsize="60"
+                    android:fontFamily="@font/nixgonf_m" />
+
+
+
+            </com.example.codinggameapp.Utils.ScalableLayout>
+
+            <com.example.codinggameapp.Utils.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:scale_base_width="1440"
+                app:scale_base_height="1300">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="124"
+                    app:scale_left="29"
+                    app:scale_top="60"
+                    app:scale_width="116"
+                    app:srcCompat="@drawable/signup_icon_01"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="124"
+                    app:scale_left="145"
+                    app:scale_top="60"
+                    app:scale_width="550"
+                    app:scale_textsize="80"
+                    android:gravity="center"
+                    android:textColor="#1A1A1A "
+                    android:text="추가 입력정보"
+                    android:fontFamily="@font/nixgonf_m"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="100"
+                    app:scale_left="125"
+                    app:scale_top="301"
+                    app:scale_width="230"
+                    app:scale_textsize="70"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#606060 "
+                    android:fontFamily="@font/nixgonf_m"
+                    android:text="나이"/>
+
+                <EditText
+                    android:id="@+id/edt_userYear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="100"
+                    app:scale_left="375"
+                    app:scale_top="301"
+                    app:scale_width="329"
+                    app:scale_textsize="60"
+                    android:gravity="center|left"
+                    android:textColor="#1A1A1A "
+                    android:paddingLeft="10dp"
+                    android:inputType="number"
+                    android:fontFamily="@font/nixgonf_m"
+                    android:background="@drawable/login_layout_edit_background"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="100"
+                    app:scale_left="750"
+                    app:scale_top="301"
+                    app:scale_width="230"
+                    app:scale_textsize="70"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/nixgonf_m"
+                    android:textColor="#606060 "
+                    android:text="성별"/>
+
+                <Spinner
+                    android:id="@+id/spinner_userSex"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="100"
+                    app:scale_left="1007"
+                    app:scale_top="301"
+                    app:scale_width="370"
+                    android:gravity="center"
+                    android:fontFamily="@font/nixgonf_m"
+                    android:background="@drawable/login_layout_edit_background">
+                </Spinner>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="100"
+                    app:scale_left="1270"
+                    app:scale_top="301"
+                    app:scale_width="100"
+                    app:srcCompat="@drawable/signup_dropdown"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="100"
+                    app:scale_left="375"
+                    app:scale_top="401"
+                    app:scale_width="300"
+                    app:scale_textsize="60"
+                    android:gravity="center"
+                    android:textColor="#606060"
+                    android:fontFamily="@font/nixgonf_m"
+                    android:text="숫자입력"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="100"
+                    app:scale_left="125"
+                    app:scale_top="550"
+                    app:scale_width="230"
+                    app:scale_textsize="70"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/nixgonf_m"
+                    android:textColor="#606060 "
+                    android:text="이메일"/>
+
+                <EditText
+                    android:id="@+id/edt_userEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="100"
+                    app:scale_left="375"
+                    app:scale_top="550"
+                    app:scale_width="457"
+                    app:scale_textsize="60"
+                    android:fontFamily="@font/nixgonf_m"
+                    android:gravity="center|left"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:textColor="#1a1a1a"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/login_layout_edit_background"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="100"
+                    app:scale_left="832"
+                    app:scale_top="550"
+                    app:scale_width="100"
+                    app:scale_textsize="70"
+                    android:gravity="center"
+                    android:textColor="#606060 "
+                    android:textStyle="bold"
+                    android:text="\@"/>
+
+                <Spinner
+                    android:id="@+id/spinner_emailList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/login_layout_edit_background"
+                    app:scale_height="100"
+                    app:scale_left="932"
+                    app:scale_top="550"
+                    app:scale_width="450"
+                    android:fontFamily="@font/nixgonf_m">
+                </Spinner>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="100"
+                    app:scale_left="1270"
+                    app:scale_top="550"
+                    app:scale_width="100"
+                    app:srcCompat="@drawable/signup_dropdown"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="100"
+                    app:scale_left="375"
+                    app:scale_top="650"
+                    app:scale_width="300"
+                    app:scale_textsize="60"
+                    android:gravity="center"
+                    android:textColor="#606060"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="100"
+                    app:scale_left="125"
+                    app:scale_top="800"
+                    app:scale_width="230"
+                    app:scale_textsize="70"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/nixgonf_m"
+                    android:textColor="#606060 "
+                    android:text="연락처"/>
+
+                <EditText
+                    android:id="@+id/edt_userPhone"
+                    android:layout_width="292dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/login_layout_edit_background"
+                    android:gravity="center|left"
+                    android:textColor="#1A1A1A "
+                    app:scale_height="100"
+                    app:scale_left="375"
+                    app:scale_textsize="60"
+                    app:scale_top="800"
+                    android:fontFamily="@font/nixgonf_m"
+                    android:paddingLeft="10dp"
+                    android:inputType="phone"
+                    app:scale_width="1000" />
+
+                <TextView
+                    android:id="@+id/btn_signUp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="139"
+                    app:scale_left="900"
+                    app:scale_top="1100"
+                    app:scale_width="484"
+                    app:scale_textsize="70"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/nixgonf_m"
+                    android:textColor="#ffffff"
+                    android:text="완료"
+                    android:background="@drawable/menu_layout_left_gradient"/>
+            </com.example.codinggameapp.Utils.ScalableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

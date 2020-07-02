@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserMissionActivity"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:ignore="missingPrefix">
+
+    <com.example.codinggameapp.Utils.ScalableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:scale_base_width="1440"
+        app:scale_base_height="265"
+        android:background="#ffffff">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="275"
+            app:scale_left="445"
+            app:scale_top="0"
+            app:scale_width="550"
+            app:srcCompat="@drawable/logo_color_yellow"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="145"
+            app:scale_left="1243"
+            app:scale_top="60"
+            app:scale_width="145"
+            app:srcCompat="@drawable/signup_icon_home_yellow"/>
+
+    </com.example.codinggameapp.Utils.ScalableLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            descendentsFocusabillity="blocksDecendants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:descendantFocusability="blocksDescendants">
+
+            <com.example.codinggameapp.Utils.ScalableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_base_width="1440"
+                app:scale_base_height="900">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:scale_height="100"
+                    app:scale_left="60"
+                    app:scale_top="35"
+                    app:scale_width="100"
+                    app:srcCompat="@drawable/user_mission_icon01" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:scale_height="100"
+                    app:scale_left="200"
+                    app:scale_top="35"
+                    app:scale_width="500"
+                    app:scale_textsize="60"
+                    android:text="최근 완료된 미션"
+                    android:fontFamily="@font/nixgonf_m"
+                    android:textColor="#303030"
+                    android:gravity="left|center"/>
+
+
+                <ListView
+                    android:id="@+id/listview_mission"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:scale_height="700"
+                    app:scale_left="60"
+                    app:scale_top="159"
+                    app:scale_width="1336"
+                    android:background="@drawable/missionlist_background">
+                </ListView>
+
+            </com.example.codinggameapp.Utils.ScalableLayout>
+
+            <com.example.codinggameapp.Utils.ScalableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_base_width="1440"
+                app:scale_base_height="1300">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:scale_height="100"
+                    app:scale_left="60"
+                    app:scale_top="35"
+                    app:scale_width="100"
+                    app:srcCompat="@drawable/user_mission_icon02" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:scale_height="100"
+                    app:scale_left="200"
+                    app:scale_top="35"
+                    app:scale_width="800"
+                    app:scale_textsize="60"
+                    android:text="최근 3개월 사용빈도"
+                    android:fontFamily="@font/nixgonf_m"
+                    android:textColor="#303030"
+                    android:gravity="left|center"/>
+
+                <lecho.lib.hellocharts.view.LineChartView
+                    android:id="@+id/chart_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="1000"
+                    app:scale_left="60"
+                    app:scale_top="159"
+                    app:scale_width="1336"
+                    android:background="@drawable/missionlist_background">
+                </lecho.lib.hellocharts.view.LineChartView>
+
+            </com.example.codinggameapp.Utils.ScalableLayout>
+
+            <com.example.codinggameapp.Utils.ScalableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_base_width="1440"
+                app:scale_base_height="1800">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:scale_height="100"
+                    app:scale_left="60"
+                    app:scale_top="35"
+                    app:scale_width="100"
+                    app:srcCompat="@drawable/user_mission_icon03" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:scale_height="100"
+                    app:scale_left="200"
+                    app:scale_top="35"
+                    app:scale_width="800"
+                    app:scale_textsize="60"
+                    android:text="활동 내역"
+                    android:fontFamily="@font/nixgonf_m"
+                    android:textColor="#303030"
+                    android:gravity="left|center"/>
+
+                <com.github.mikephil.charting.charts.RadarChart
+                    android:id="@+id/chart_userContents"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="1336"
+                    app:scale_left="60"
+                    app:scale_top="159"
+                    app:scale_width="1336"
+                    android:background="@drawable/menu_layout_border_white"/>
+            </com.example.codinggameapp.Utils.ScalableLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

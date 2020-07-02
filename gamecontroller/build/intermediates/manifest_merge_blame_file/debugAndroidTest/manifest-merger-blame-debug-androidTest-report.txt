@@ -1,0 +1,36 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.andretietz.android.controller.test" >
+4
+5    <uses-sdk
+5-->C:\_gitProject\CodingGameApp\gamecontroller\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4125177872568821366.xml:5:5-74
+6        android:minSdkVersion="19"
+6-->C:\_gitProject\CodingGameApp\gamecontroller\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4125177872568821366.xml:5:15-41
+7        android:targetSdkVersion="26" />
+7-->C:\_gitProject\CodingGameApp\gamecontroller\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4125177872568821366.xml:5:42-71
+8
+9    <instrumentation
+9-->C:\_gitProject\CodingGameApp\gamecontroller\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4125177872568821366.xml:11:5-15:88
+10        android:name="android.test.InstrumentationTestRunner"
+10-->C:\_gitProject\CodingGameApp\gamecontroller\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4125177872568821366.xml:11:22-75
+11        android:functionalTest="false"
+11-->C:\_gitProject\CodingGameApp\gamecontroller\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4125177872568821366.xml:14:22-52
+12        android:handleProfiling="false"
+12-->C:\_gitProject\CodingGameApp\gamecontroller\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4125177872568821366.xml:13:22-53
+13        android:label="Tests for com.andretietz.android.controller.test"
+13-->C:\_gitProject\CodingGameApp\gamecontroller\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4125177872568821366.xml:15:22-86
+14        android:targetPackage="com.andretietz.android.controller.test" />
+14-->C:\_gitProject\CodingGameApp\gamecontroller\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4125177872568821366.xml:12:22-84
+15
+16    <application
+16-->C:\_gitProject\CodingGameApp\gamecontroller\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4125177872568821366.xml:7:5-9:19
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.0.0] C:\Users\SEO\.gradle\caches\transforms-2\files-2.1\8ac59f6f6a5c2575bb7d5b2b7495f5e2\core-1.0.0\AndroidManifest.xml:22:18-86
+18        android:debuggable="true" >
+18-->C:\_gitProject\CodingGameApp\gamecontroller\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4125177872568821366.xml:7:18-43
+19        <uses-library android:name="android.test.runner" />
+19-->C:\_gitProject\CodingGameApp\gamecontroller\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4125177872568821366.xml:8:9-60
+19-->C:\_gitProject\CodingGameApp\gamecontroller\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger4125177872568821366.xml:8:23-57
+20    </application>
+21
+22</manifest>

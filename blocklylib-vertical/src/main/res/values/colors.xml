@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="date_bg">#ffaaaaaa</color>
+    <color name="angle_bg">#ffaaaaaa</color>
+    <color name="label_text">@android:color/white</color>
+    <color name="label_text_black">@android:color/black</color>
+    <color name="field_text">#ff212121</color><!-- Material 900 Grey --> <!-- dropdown에 표시되는 text 색. -->
+    <color name="mutator_background_color">#ffbbbbff</color>
+</resources>

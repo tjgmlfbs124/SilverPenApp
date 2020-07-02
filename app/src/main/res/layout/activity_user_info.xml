@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:ignore="missingPrefix">
+
+    <com.example.codinggameapp.Utils.ScalableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:scale_base_width="1440"
+        app:scale_base_height="265"
+        android:background="#ffd814">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="275"
+            app:scale_left="445"
+            app:scale_top="0"
+            app:scale_width="550"
+            app:srcCompat="@drawable/logo_color_white"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="195"
+            app:scale_left="1243"
+            app:scale_top="35"
+            app:scale_width="140"
+            app:srcCompat="@drawable/signup_icon_home_white"/>
+    </com.example.codinggameapp.Utils.ScalableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffd814">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.example.codinggameapp.Utils.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:scale_base_width="1440"
+                app:scale_base_height="733">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="633"
+                    app:scale_left="51"
+                    app:scale_top="66"
+                    app:scale_width="1336"
+                    android:background="@drawable/missionlist_background">
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="89"
+                    app:scale_left="126"
+                    app:scale_top="118"
+                    app:scale_width="105"
+                    app:srcCompat="@drawable/userinfo_message_icon"/>
+
+                <TextView
+                    android:id="@+id/txt_user_gradeComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="89"
+                    app:scale_left="250"
+                    app:scale_top="118"
+                    app:scale_width="1000"
+                    app:scale_textsize="60"
+                    android:gravity="center|left"
+                    android:fontFamily="@font/nixgonf_m"
+                    android:textColor="#606060"
+                    android:text="현재 회원님의 등급은 - 입니다." />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img_user_grade"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="345"
+                    app:scale_left="126"
+                    app:scale_top="239"
+                    app:scale_width="423"
+                    app:srcCompat="@drawable/userinfo_level_bronze"/>
+
+                <TextView
+                    android:id="@+id/txt_user_grade"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="80"
+                    app:scale_left="126"
+                    app:scale_top="584"
+                    app:scale_width="423"
+                    app:scale_textsize="50"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="#606060"
+                    android:text="브론즈"
+                    android:fontFamily="@font/nixgonf_bold" />
+            </com.example.codinggameapp.Utils.ScalableLayout>
+
+            <com.example.codinggameapp.Utils.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:scale_base_width="1440"
+                app:scale_base_height="1562">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="1461"
+                    app:scale_left="51"
+                    app:scale_top="66"
+                    app:scale_width="1327"
+                    android:background="@drawable/missionlist_background">
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="89"
+                    app:scale_left="126"
+                    app:scale_top="118"
+                    app:scale_width="105"
+                    app:srcCompat="@drawable/userinfo_info_icon"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="89"
+                    app:scale_left="250"
+                    app:scale_top="118"
+                    app:scale_width="1000"
+                    app:scale_textsize="60"
+                    android:textStyle="bold"
+                    android:gravity="center|left"
+                    android:textColor="#606060"
+                    android:text="회원정보"
+                    android:fontFamily="@font/nixgonf_m" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="89"
+                    app:scale_left="126"
+                    app:scale_top="302"
+                    app:scale_width="207"
+                    app:scale_textsize="60"
+                    android:gravity="center|left"
+                    android:textColor="#303030"
+                    android:text="이름"
+                    android:fontFamily="@font/nixgonf_bold" />
+
+                <TextView
+                    android:id="@+id/txt_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="89"
+                    app:scale_left="413"
+                    app:scale_top="302"
+                    app:scale_width="342"
+                    app:scale_textsize="60"
+                    android:fontFamily="@font/nixgonf_bold"
+                    android:gravity="center"
+                    android:textColor="#303030"
+                    android:text="-"
+                    android:background="@drawable/login_layout_edit_background" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="89"
+                    app:scale_left="126"
+                    app:scale_top="486"
+                    app:scale_width="207"
+                    app:scale_textsize="60"
+                    android:gravity="center|left"
+                    android:textColor="#303030"
+                    android:text="나이"
+                    android:fontFamily="@font/nixgonf_bold" />
+
+                <TextView
+                    android:id="@+id/txt_user_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="89"
+                    app:scale_left="413"
+                    app:scale_top="486"
+                    app:scale_width="342"
+                    app:scale_textsize="60"
+                    android:fontFamily="@font/nixgonf_bold"
+                    android:gravity="center"
+                    android:textColor="#303030"
+                    android:text="-"
+                    android:background="@drawable/login_layout_edit_background" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="89"
+                    app:scale_left="750"
+                    app:scale_top="486"
+                    app:scale_width="100"
+                    app:scale_textsize="60"
+                    android:fontFamily="@font/nixgonf_bold"
+                    android:gravity="center"
+                    android:textColor="#303030"
+                    android:text="세" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="89"
+                    app:scale_left="126"
+                    app:scale_top="670"
+                    app:scale_width="207"
+                    app:scale_textsize="60"
+                    android:fontFamily="@font/nixgonf_bold"
+                    android:gravity="center|left"
+                    android:textColor="#303030"
+                    android:text="성별" />
+
+                <TextView
+                    android:id="@+id/txt_user_sex"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="89"
+                    app:scale_left="413"
+                    app:scale_top="670"
+                    app:scale_width="342"
+                    app:scale_textsize="60"
+                    android:fontFamily="@font/nixgonf_bold"
+                    android:gravity="center"
+                    android:textColor="#303030"
+                    android:text="-"
+                    android:background="@drawable/login_layout_edit_background" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="89"
+                    app:scale_left="126"
+                    app:scale_top="854"
+                    app:scale_width="207"
+                    app:scale_textsize="60"
+                    android:fontFamily="@font/nixgonf_bold"
+                    android:gravity="center|left"
+                    android:textColor="#303030"
+                    android:text="이메일" />
+
+                <TextView
+                    android:id="@+id/txt_user_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="89"
+                    app:scale_left="413"
+                    app:scale_top="854"
+                    app:scale_width="790"
+                    app:scale_textsize="60"
+                    android:fontFamily="@font/nixgonf_bold"
+                    android:gravity="center"
+                    android:textColor="#303030"
+                    android:text="-"
+                    android:background="@drawable/login_layout_edit_background" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:text="연락처"
+                    android:textColor="#303030"
+                    android:fontFamily="@font/nixgonf_bold"
+                    app:scale_height="89"
+                    app:scale_left="126"
+                    app:scale_textsize="60"
+                    app:scale_top="1038"
+                    app:scale_width="207" />
+
+                <TextView
+                    android:id="@+id/txt_user_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="89"
+                    app:scale_left="413"
+                    app:scale_top="1038"
+                    app:scale_width="790"
+                    app:scale_textsize="60"
+                    android:fontFamily="@font/nixgonf_bold"
+                    android:gravity="center"
+                    android:textColor="#303030"
+                    android:text="-"
+                    android:background="@drawable/login_layout_edit_background" />
+
+            </com.example.codinggameapp.Utils.ScalableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="missingPrefix">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.example.codinggameapp.Utils.ScalableLayout
+            android:id="@+id/mission_0401"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFD814"
+            app:scale_base_width="1920"
+            app:scale_base_height="400"
+            android:tag="0401">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="200"
+                app:scale_left="150"
+                app:scale_top="100"
+                app:scale_width="200"
+                app:srcCompat="@drawable/mission_tab04_icon_white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                app:scale_height="180"
+                app:scale_left="600"
+                app:scale_top="20"
+                app:scale_width="900"
+                android:textColor="#1a1a1a"
+                android:fontFamily="@font/nixgonf_bold"
+                android:text="조건반복 001"
+                app:scale_textsize="100"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="110"
+                app:scale_left="600"
+                app:scale_top="200"
+                app:scale_width="400"
+                app:srcCompat="@drawable/mission_level_02_red"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="173"
+                app:scale_left="1700"
+                app:scale_top="70"
+                app:scale_width="200"
+                app:srcCompat="@android:drawable/ic_media_play" />
+        </com.example.codinggameapp.Utils.ScalableLayout>
+
+        <com.example.codinggameapp.Utils.ScalableLayout
+            android:id="@+id/mission_0402"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFD814"
+            app:scale_base_width="1920"
+            app:scale_base_height="400"
+            android:tag="0402">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="200"
+                app:scale_left="150"
+                app:scale_top="100"
+                app:scale_width="200"
+                app:srcCompat="@drawable/mission_tab04_icon_white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                app:scale_height="180"
+                app:scale_left="600"
+                app:scale_top="20"
+                app:scale_width="900"
+                android:textColor="#1a1a1a"
+                android:fontFamily="@font/nixgonf_bold"
+                android:text="조건반복 002"
+                app:scale_textsize="100"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="110"
+                app:scale_left="600"
+                app:scale_top="200"
+                app:scale_width="400"
+                app:srcCompat="@drawable/mission_level_02_red"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="173"
+                app:scale_left="1700"
+                app:scale_top="70"
+                app:scale_width="200"
+                app:srcCompat="@android:drawable/ic_media_play" />
+        </com.example.codinggameapp.Utils.ScalableLayout>
+
+        <com.example.codinggameapp.Utils.ScalableLayout
+            android:id="@+id/mission_0403"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFD814"
+            app:scale_base_width="1920"
+            app:scale_base_height="400"
+            android:tag="0403">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="200"
+                app:scale_left="150"
+                app:scale_top="100"
+                app:scale_width="200"
+                app:srcCompat="@drawable/mission_tab04_icon_white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                app:scale_height="180"
+                app:scale_left="600"
+                app:scale_top="20"
+                app:scale_width="900"
+                android:textColor="#1a1a1a"
+                android:fontFamily="@font/nixgonf_bold"
+                android:text="조건반복 003"
+                app:scale_textsize="100"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="110"
+                app:scale_left="600"
+                app:scale_top="200"
+                app:scale_width="400"
+                app:srcCompat="@drawable/mission_level_02_red"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="173"
+                app:scale_left="1700"
+                app:scale_top="70"
+                app:scale_width="200"
+                app:srcCompat="@android:drawable/ic_media_play" />
+        </com.example.codinggameapp.Utils.ScalableLayout>
+        <com.example.codinggameapp.Utils.ScalableLayout
+            android:id="@+id/mission_0404"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFD814"
+            app:scale_base_width="1920"
+            app:scale_base_height="400"
+            android:tag="0404">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="200"
+                app:scale_left="150"
+                app:scale_top="100"
+                app:scale_width="200"
+                app:srcCompat="@drawable/mission_tab04_icon_white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                app:scale_height="180"
+                app:scale_left="600"
+                app:scale_top="20"
+                app:scale_width="900"
+                android:textColor="#1a1a1a"
+                android:fontFamily="@font/nixgonf_bold"
+                android:text="조건반복 004"
+                app:scale_textsize="100"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="110"
+                app:scale_left="600"
+                app:scale_top="200"
+                app:scale_width="400"
+                app:srcCompat="@drawable/mission_level_03_red"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="173"
+                app:scale_left="1700"
+                app:scale_top="70"
+                app:scale_width="200"
+                app:srcCompat="@android:drawable/ic_media_play" />
+        </com.example.codinggameapp.Utils.ScalableLayout>
+        <com.example.codinggameapp.Utils.ScalableLayout
+            android:id="@+id/mission_0405"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFD814"
+            app:scale_base_width="1920"
+            app:scale_base_height="400"
+            android:tag="0405">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="200"
+                app:scale_left="150"
+                app:scale_top="100"
+                app:scale_width="200"
+                app:srcCompat="@drawable/mission_tab04_icon_white" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                app:scale_height="180"
+                app:scale_left="600"
+                app:scale_top="20"
+                app:scale_width="900"
+                android:textColor="#1a1a1a"
+                android:fontFamily="@font/nixgonf_bold"
+                android:text="조건반복 005"
+                app:scale_textsize="100"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="110"
+                app:scale_left="600"
+                app:scale_top="200"
+                app:scale_width="400"
+                app:srcCompat="@drawable/mission_level_03_red"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="173"
+                app:scale_left="1700"
+                app:scale_top="70"
+                app:scale_width="200"
+                app:srcCompat="@android:drawable/ic_media_play" />
+        </com.example.codinggameapp.Utils.ScalableLayout>
+        <com.example.codinggameapp.Utils.ScalableLayout
+            android:id="@+id/mission_0406"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFD814"
+            app:scale_base_width="1920"
+            app:scale_base_height="400"
+            android:tag="0406">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="200"
+                app:scale_left="150"
+                app:scale_top="100"
+                app:scale_width="200"
+                app:srcCompat="@drawable/mission_tab04_icon_white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                app:scale_height="180"
+                app:scale_left="600"
+                app:scale_top="20"
+                app:scale_width="900"
+                android:textColor="#1a1a1a"
+                android:fontFamily="@font/nixgonf_bold"
+                android:text="조건반복 006"
+                app:scale_textsize="100"/>
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="110"
+                app:scale_left="600"
+                app:scale_top="200"
+                app:scale_width="400"
+                app:srcCompat="@drawable/mission_level_03_red"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="173"
+                app:scale_left="1700"
+                app:scale_top="70"
+                app:scale_width="200"
+                app:srcCompat="@android:drawable/ic_media_play" />
+        </com.example.codinggameapp.Utils.ScalableLayout>
+        <com.example.codinggameapp.Utils.ScalableLayout
+            android:id="@+id/mission_0407"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFD814"
+            app:scale_base_width="1920"
+            app:scale_base_height="400"
+            android:tag="0407">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="200"
+                app:scale_left="150"
+                app:scale_top="100"
+                app:scale_width="200"
+                app:srcCompat="@drawable/mission_tab04_icon_white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                android:text="조건반복 007"
+                android:textColor="#1a1a1a"
+                android:fontFamily="@font/nixgonf_bold"
+                app:scale_height="180"
+                app:scale_left="600"
+                app:scale_textsize="100"
+                app:scale_top="20"
+                app:scale_width="900" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="110"
+                app:scale_left="600"
+                app:scale_top="200"
+                app:scale_width="400"
+                app:srcCompat="@drawable/mission_level_03_red"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="173"
+                app:scale_left="1700"
+                app:scale_top="70"
+                app:scale_width="200"
+                app:srcCompat="@android:drawable/ic_media_play" />
+        </com.example.codinggameapp.Utils.ScalableLayout>
+    </LinearLayout>
+
+</ScrollView>

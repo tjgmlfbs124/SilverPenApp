@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#ffffff"
+    tools:ignore="missingPrefix"
+    android:orientation="vertical">
+
+    <com.example.codinggameapp.Utils.ScalableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:scale_base_width="1440"
+        app:scale_base_height="265"
+        android:background="#ffffff">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="275"
+            app:scale_left="445"
+            app:scale_top="0"
+            app:scale_width="550"
+            app:srcCompat="@drawable/logo_color_yellow"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="195"
+            app:scale_left="1243"
+            app:scale_top="35"
+            app:scale_width="140"
+            app:srcCompat="@drawable/bluetooth_yellow_on"/>
+
+    </com.example.codinggameapp.Utils.ScalableLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bluetooth_background">
+
+        <com.skyfishjy.library.RippleBackground
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            app:rb_color="#FFD814"
+            app:rb_duration="3000"
+            app:rb_radius="32dp"
+            app:rb_rippleAmount="4"
+            app:rb_scale="6">
+        </com.skyfishjy.library.RippleBackground>
+
+        <com.example.codinggameapp.Utils.ScalableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_base_width="800"
+            app:scale_base_height="1000"
+            android:layout_gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/create_img2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="630"
+                app:scale_left="220"
+                app:scale_top="185"
+                app:scale_width="360"
+                app:srcCompat="@drawable/bluetooth_main_icon"/>
+        </com.example.codinggameapp.Utils.ScalableLayout>
+
+
+
+        <TextView
+            android:id="@+id/bluetooth_txt_message"
+            android:layout_width="match_parent"
+            android:layout_height="200px"
+            android:gravity="center"
+            android:text="잠시만 기다려주세요."
+            android:fontFamily="@font/nixgonf_m"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:textSize="80px"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

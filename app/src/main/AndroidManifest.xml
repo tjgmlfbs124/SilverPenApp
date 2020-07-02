@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.codinggameapp">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="실버펜"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".TestActivity"></activity>
+        <activity android:name=".GetIDActivity" />
+        <activity android:name=".JoystickActivity" />
+        <activity android:name=".MissionListActivity" />
+        <activity android:name=".RankingActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".UserMissionActivity" />
+        <activity android:name=".BluetoothActivity" />
+        <activity android:name=".UserInfoActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity
+            android:name=".CodingActivity"
+            android:label="@string/lua_activity_name"
+            android:screenOrientation="unspecified"
+            android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

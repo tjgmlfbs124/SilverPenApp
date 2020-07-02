@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="missingPrefix"
+    android:background="#000000">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+            <com.example.codinggameapp.Utils.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:scale_base_width="2560"
+                app:scale_base_height="1440"
+                android:background="#ffffff">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="200"
+                    app:scale_left="0"
+                    app:scale_top="0"
+                    app:scale_width="2560"
+                    android:background="@drawable/menu_layout_top_gradient">
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="150"
+                    app:scale_left="75"
+                    app:scale_top="25"
+                    app:scale_width="150"
+                    app:srcCompat="@drawable/signup_icon_home_white" />
+
+                <TextView
+                    android:id="@+id/dialog_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:scale_height="150"
+                    app:scale_left="300"
+                    app:scale_top="25"
+                    app:scale_width="1000"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/nixgonf_bold"
+                    app:scale_textsize="80"
+                    android:gravity="center|left"
+                    android:text="미션"/>
+
+                <TextView
+                    android:id="@+id/dialog_message_01"
+                    android:padding="15px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:scale_height="130"
+                    app:scale_left="100"
+                    app:scale_top="300"
+                    app:scale_width="1130"
+                    android:fontFamily="@font/nixgonf_bold"
+                    app:scale_textsize="75"
+                    android:gravity="top|left"
+                    android:textColor="#303030"
+                    android:text="미션 제목"/>
+
+                <TextView
+                    android:id="@+id/dialog_message_02"
+                    android:padding="15px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:scale_height="600"
+                    app:scale_left="100"
+                    app:scale_top="430"
+                    app:scale_width="1130"
+                    android:fontFamily="@font/nixgonf_m"
+                    app:scale_textsize="70"
+                    android:gravity="top|left"
+                    android:textColor="#303030"
+                    android:text="미션 내용"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/mission_Image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="730"
+                    app:scale_left="1280"
+                    app:scale_top="300"
+                    app:scale_width="1130">
+                </androidx.appcompat.widget.AppCompatImageView>
+
+                <TextView
+                    android:id="@+id/btn_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:scale_height="150"
+                    app:scale_left="980"
+                    app:scale_top="1200"
+                    app:scale_width="600"
+                    android:fontFamily="@font/nixgonf_bold"
+                    app:scale_textsize="100"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:background="@drawable/menu_layout_top_gradient"
+                    android:text="시작"/>
+            </com.example.codinggameapp.Utils.ScalableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

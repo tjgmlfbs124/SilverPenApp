@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tablet_title_Height">100dp</dimen>
+    <dimen name="tablet_title_Icon_size">70dp</dimen>
+    <dimen name="tablet_title_Logo_size">55dp</dimen>
+
+    <dimen name="phone_title_Height">50dp</dimen>
+    <dimen name="phone_title_Icon_size">30dp</dimen>
+    <dimen name="phone_title_Logo_size">24sp</dimen>
+</resources>

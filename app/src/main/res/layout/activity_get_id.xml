@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:ignore="missingPrefix">
+
+    <com.example.codinggameapp.Utils.ScalableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:scale_base_width="1440"
+        app:scale_base_height="265"
+        android:background="#ffffff">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="275"
+            app:scale_left="445"
+            app:scale_top="0"
+            app:scale_width="550"
+            app:srcCompat="@drawable/logo_color_yellow"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="145"
+            app:scale_left="1243"
+            app:scale_top="60"
+            app:scale_width="145"
+            app:srcCompat="@drawable/signup_icon_home_yellow"/>
+    </com.example.codinggameapp.Utils.ScalableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <com.example.codinggameapp.Utils.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:scale_base_width="1440"
+                app:scale_base_height="1350"
+                android:background="@drawable/login_background">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="107"
+                    app:scale_left="62"
+                    app:scale_top="52"
+                    app:scale_width="86"
+                    app:srcCompat="@drawable/getid_icon"/>
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="100"
+                    app:scale_left="180"
+                    app:scale_top="52"
+                    app:scale_width="800"
+                    android:fontFamily="@font/nixgonf_bold"
+                    android:textColor="#ffffff"
+                    android:gravity="center|left"
+                    android:text="이름으로 아이디 찾기"
+                    app:scale_textsize="80"/>
+
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="700"
+                    app:scale_left="270"
+                    app:scale_top="234"
+                    app:scale_width="900"
+                    app:srcCompat="@drawable/login_main_image" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="700"
+                    app:scale_left="270"
+                    app:scale_top="234"
+                    app:scale_width="900"
+                    app:scale_textsize="80"
+                    android:text="SILVER\nPEN"
+                    android:gravity="center"
+                    android:textColor="#ffd814"
+                    android:textStyle="bold"
+                    />
+
+            </com.example.codinggameapp.Utils.ScalableLayout>
+
+            <com.example.codinggameapp.Utils.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:scale_base_width="1440"
+                app:scale_base_height="1169">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="107"
+                    app:scale_left="171"
+                    app:scale_top="35"
+                    app:scale_width="86"
+                    app:srcCompat="@drawable/login_name_icon"/>
+
+                <EditText
+                    android:id="@+id/edt_get_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="122"
+                    app:scale_left="318"
+                    app:scale_top="30"
+                    app:scale_width="577"
+                    android:hint="사용자 이름"
+                    android:fontFamily="@font/nixgonf_m"
+                    android:textColor="#1a1a1a"
+                    android:textColorHint="#999999"
+                    android:inputType="text"
+                    app:scale_textsize="70"
+                    android:paddingLeft="10dp"
+                    android:background="@drawable/login_layout_edit_background" />
+
+                <TextView
+                    android:id="@+id/btn_getID"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="122"
+                    app:scale_left="925"
+                    app:scale_top="30"
+                    app:scale_width="400"
+                    app:scale_textsize="65"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#ffffff "
+                    android:background="@drawable/signup_check"
+                    android:fontFamily="@font/nixgonf_m"
+                    android:text="아이디 찾기" />
+
+                <com.example.codinggameapp.Utils.ScalableLayout
+                    android:id="@+id/layout_result"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_base_width="1440"
+                    app:scale_base_height="800"
+                    app:scale_height="800"
+                    app:scale_left="0"
+                    app:scale_top="240"
+                    app:scale_width="1440"
+                    android:visibility="gone"
+                    android:background="@drawable/menu_layout_border_yellow">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:scale_height="151"
+                        app:scale_left="140"
+                        app:scale_top="121"
+                        app:scale_width="130"
+                        app:srcCompat="@drawable/login_id_icon_white"/>
+
+                    <TextView
+                        android:id="@+id/txt_result"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:scale_height="193"
+                        app:scale_left="307"
+                        app:scale_top="104"
+                        app:scale_width="985"
+                        android:fontFamily="@font/nixgonf_m"
+                        android:textColor="#1a1a1a"
+                        android:textColorHint="#999999"
+                        android:gravity="center"
+                        android:inputType="text"
+                        app:scale_textsize="90"
+                        android:background="@drawable/menu_layout_border_white"/>
+                    <TextView
+                        android:id="@+id/btn_close"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:scale_height="122"
+                        app:scale_left="307"
+                        app:scale_top="391"
+                        app:scale_width="985"
+                        app:scale_textsize="65"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="#ffffff "
+                        android:background="@drawable/signup_check"
+                        android:fontFamily="@font/nixgonf_m"
+                        android:text="닫 기" />
+                </com.example.codinggameapp.Utils.ScalableLayout>
+            </com.example.codinggameapp.Utils.ScalableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

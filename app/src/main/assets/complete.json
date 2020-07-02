@@ -1,0 +1,82 @@
+{
+  "0101" : {
+    "x" : 50,
+    "y" : 50,
+    "minBlock" : 1,
+    "EssentialBlock" : ["hello"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  },
+  "0102" : {
+    "x" : 50,
+    "y" : 53,
+    "minBlock" : 3,
+    "EssentialBlock" : ["mission_go"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  },
+  "0103" : {
+    "x" : 50,
+    "y" : 46,
+    "minBlock" : 4,
+    "EssentialBlock" : ["mission_go", "mission_back"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  },
+  "0104" : {
+    "x" : 50,
+    "y" : 50,
+    "minBlock" : 4,
+    "EssentialBlock" : ["mission_right", "mission_left"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  },
+  "0105" : {
+    "x" : 50,
+    "y" : 50,
+    "minBlock" : 4,
+    "EssentialBlock" : ["mission_right", "mission_left"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  },
+  "0201" : {
+    "x" : 0,
+    "y" : 53,
+    "minBlock" : 3,
+    "EssentialBlock" : ["mission_go"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  },
+  "0202" : {
+    "x" : 50,
+    "y" : 50,
+    "minBlock" : 4,
+    "EssentialBlock" : ["mission_go"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  },
+  "0203" : {
+    "x" : 50,
+    "y" : 50,
+    "minBlock" : 2,
+    "EssentialBlock" : ["rgb_right_on"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  },
+  "0204" : {
+    "x" : 50,
+    "y" : 50,
+    "minBlock" : 2,
+    "EssentialBlock" : ["rgb_right_on", "mission_go"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  },
+  "0205" : {
+    "x" : 50,
+    "y" : 50,
+    "minBlock" : 2,
+    "EssentialBlock" : ["buzzer_on", "mission_go"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  }
+}

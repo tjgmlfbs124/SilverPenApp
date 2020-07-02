@@ -1,0 +1,156 @@
+[
+
+  {
+    "type": "face_bored_01",
+    "message0": "%1",
+    "args0": [
+      {
+        "type": "field_image",
+        "src": "svg_motion_thatsright",
+        "width": 50,
+        "height": 50,
+        "alt": "that's right"
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#4562f5",
+    "tooltip": "맞았어요",
+    "helpUrl": "https://github.com/google/blockly/wiki/Text#printing-text"
+  },
+  {
+    "type": "face_bored_02",
+    "message0": "%1",
+    "args0": [{
+      "type": "field_image",
+      "src": "svg_motion_thatswrong",
+      "width": 50,
+      "height": 50,
+      "alt": "that's wrong"
+    }
+    ],
+    "previousStatement": null,
+    "align":"RIGHT",
+    "nextStatement": null,
+    "colour": "#4562f5",
+    "tooltip": "틀렸어요",
+    "helpUrl": "https://github.com/google/blockly/wiki/Text#printing-text"
+  },
+  {
+    "type": "face_bored_03",
+    "message0": "%1",
+    "args0": [{
+      "type": "field_image",
+      "src": "wondering_3",
+      "alt": "wondering"
+    }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#4562f5",
+    "tooltip": "갸우뚱 갸우뚱",
+    "helpUrl": "https://github.com/google/blockly/wiki/Text#printing-text"
+  },
+  {
+    "type": "face_bored_04",
+    "message0": "%1",
+    "args0": [{
+      "type": "field_image",
+      "src": "svg_motion_wannagof",
+      "width": 50,
+      "height": 50,
+      "alt": "wanna go forward"
+    }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#4562f5",
+    "tooltip": "앞으로 갈거야",
+    "helpUrl": "https://github.com/google/blockly/wiki/Text#printing-text"
+  },
+  {
+    "type": "face_bored_05",
+    "message0": "%1",
+    "args0": [{
+      "type": "field_image",
+      "src": "svg_motion_wannagob",
+      "width": 50,
+      "height": 50,
+      "alt": "wanna go backward"
+    }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#4562f5",
+    "tooltip": "뒤로 갈거야",
+    "helpUrl": "https://github.com/google/blockly/wiki/Text#printing-text"
+  },
+  {
+    "type": "face_bored_06",
+    "message0": "%1",
+    "args0": [{
+      "type": "field_image",
+      "src": "svg_motion_wannagor",
+      "width": 50,
+      "height": 50,
+      "alt": "wanna go right"
+    }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#4562f5",
+    "tooltip": "오른쪽으로 돌거야",
+    "helpUrl": "https://github.com/google/blockly/wiki/Text#printing-text"
+  },
+  {
+    "type": "face_bored_07",
+    "message0": "%1",
+    "args0": [{
+      "type": "field_image",
+      "src": "svg_motion_wannagol",
+      "width": 50,
+      "height": 50,
+      "alt": "wanna go left"
+    }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#4562f5",
+    "tooltip": "왼쪽으로 돌거야",
+    "helpUrl": "https://github.com/google/blockly/wiki/Text#printing-text"
+  },
+  {
+    "type": "face_bored_08",
+    "message0": "%1",
+    "args0": [{
+      "type": "field_image",
+      "src": "svg_motion_keepquiet",
+      "width": 50,
+      "height": 50,
+      "alt": "keep quiet"
+    }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#4562f5",
+    "tooltip": "말을 참고있어",
+    "helpUrl": "https://github.com/google/blockly/wiki/Text#printing-text"
+  },
+  {
+    "type": "face_bored_09",
+    "message0": "%1",
+    "args0": [{
+      "type": "field_image",
+      "src": "svg_motion_waiting",
+      "width": 50,
+      "height": 50,
+      "alt": "waiting"
+    }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#4562f5",
+    "tooltip": "기다리고 있어",
+    "helpUrl": "https://github.com/google/blockly/wiki/Text#printing-text"
+  }
+]

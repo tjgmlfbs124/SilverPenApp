@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoystickActivity"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:ignore="missingPrefix">
+    <com.example.codinggameapp.Utils.ScalableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:scale_base_width="2560"
+        app:scale_base_height="200"
+        android:background="@drawable/menu_layout_top_gradient">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="200"
+            app:scale_left="1080"
+            app:scale_top="0"
+            app:scale_width="400"
+            app:srcCompat="@drawable/logo_color_white"/>
+    </com.example.codinggameapp.Utils.ScalableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <com.example.codinggameapp.Utils.ScalableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:scale_base_width="2560"
+            app:scale_base_height="1242"
+            android:background="#424242">
+
+            <com.andretietz.android.controller.DirectionView
+                android:id="@+id/viewDirection"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:scale_height="700"
+                app:scale_left="200"
+                app:scale_top="250"
+                app:scale_width="700"
+                app:buttonCenterDistance="0.5"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_light"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:scale_height="250"
+                app:scale_left="2250"
+                app:scale_top="50"
+                app:scale_width="250"
+                app:srcCompat="@drawable/joystick_rgb_off">
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_Tone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:scale_height="250"
+                app:scale_left="2250"
+                app:scale_top="350"
+                app:scale_width="250"
+                app:srcCompat="@drawable/joystick_buzzer_off">
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_melody"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:scale_height="250"
+                app:scale_left="2250"
+                app:scale_top="650"
+                app:scale_width="250"
+                app:srcCompat="@drawable/joystick_melody_off">
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_motor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:scale_height="250"
+                app:scale_left="2250"
+                app:scale_top="950"
+                app:scale_width="250"
+                app:srcCompat="@drawable/joystick_speed_off">
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <LinearLayout
+                android:id="@+id/fragment_joystick"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:scale_height="900"
+                app:scale_left="1200"
+                app:scale_top="150"
+                app:scale_width="900">
+            </LinearLayout>
+
+        </com.example.codinggameapp.Utils.ScalableLayout>
+    </ScrollView>
+</LinearLayout>

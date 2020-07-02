@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardlist_layout"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:gravity="center|left"
+    android:layout_gravity="center|left"
+    tools:ignore="missingPrefix">
+
+        <com.example.codinggameapp.Utils.ScalableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_base_width="1600"
+            app:scale_base_height="180">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                app:scale_height="180"
+                app:scale_left="0"
+                app:scale_top="0"
+                app:scale_width="180"
+                app:scale_textsize="70"
+                android:fontFamily="@font/nixgonf_m"
+                android:textColor="#303030"
+                android:text="-"/>
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center|left"
+                app:scale_height="180"
+                app:scale_left="180"
+                app:scale_top="0"
+                app:scale_width="800"
+                android:textColor="#303030"
+                android:fontFamily="@font/nixgonf_m"
+                android:textStyle="bold"
+                app:scale_textsize="70"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:scale_height="180"
+                app:scale_left="980"
+                app:scale_top="0"
+                app:scale_width="618"
+                app:srcCompat="@drawable/mission_level_00_red" />
+
+        </com.example.codinggameapp.Utils.ScalableLayout>
+
+</LinearLayout>

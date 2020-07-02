@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:ignore="missingPrefix">
+
+    <com.example.codinggameapp.Utils.ScalableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:scale_base_width="1440"
+        app:scale_base_height="265"
+        android:background="#ffffff">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="275"
+            app:scale_left="445"
+            app:scale_top="0"
+            app:scale_width="550"
+            app:srcCompat="@drawable/logo_color_yellow"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/btn_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:scale_height="145"
+            app:scale_left="1243"
+            app:scale_top="60"
+            app:scale_width="145"
+            app:srcCompat="@drawable/signup_icon_home_yellow"/>
+    </com.example.codinggameapp.Utils.ScalableLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <com.example.codinggameapp.Utils.ScalableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:scale_base_width="1440"
+                app:scale_base_height="2200">
+
+                <TextView
+                    android:id="@+id/btn_start"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="122"
+                    app:scale_left="270"
+                    app:scale_top="100"
+                    app:scale_width="900"
+                    app:scale_textsize="70"
+                    android:gravity="center"
+                    android:background="@drawable/menu_layout_left_gradient"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/nixgonf_bold"
+                    android:text="시작"/>
+
+                <TextView
+                    android:id="@+id/text_testResult"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="800"
+                    app:scale_left="0"
+                    app:scale_top="250"
+                    app:scale_width="1440"
+                    android:textColor="#606060"
+                    android:fontFamily="@font/nixgonf_bold"
+                    app:scale_textsize="70"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:id="@+id/img_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="800"
+                    app:scale_left="0"
+                    app:scale_top="1050"
+                    app:scale_width="1440" />
+
+            </com.example.codinggameapp.Utils.ScalableLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

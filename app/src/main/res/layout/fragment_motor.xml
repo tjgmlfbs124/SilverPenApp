@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoystickActivity"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:background="@drawable/joystick_background">
+
+    <LinearLayout
+        android:id="@+id/parentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="3dp"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn_setSpeed_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#363c46"
+            android:text="5단"/>
+        <Button
+            android:id="@+id/btn_setSpeed_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#363c46"
+            android:text="4단"/>
+        <Button
+            android:id="@+id/btn_setSpeed_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#363c46"
+            android:text="3단"/>
+        <Button
+            android:id="@+id/btn_setSpeed_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#363c46"
+            android:text="2단"/>
+        <Button
+            android:id="@+id/btn_setSpeed_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#363c46"
+            android:text="1단"/>
+
+    </LinearLayout>
+</FrameLayout>
