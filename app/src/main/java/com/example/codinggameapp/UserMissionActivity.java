@@ -10,6 +10,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.example.codinggameapp.Dialog.RequestProgressDialog;
 import com.example.codinggameapp.Http.HttpGetRequestClass;
@@ -52,7 +53,6 @@ public class UserMissionActivity extends AppCompatActivity {
         reqDialog = new RequestProgressDialog(UserMissionActivity.this);
         btn_home = findViewById(R.id.btn_home);
         if(DataManager.LoginStatus(getApplicationContext())) {
-            new requestGetUserMissionInfo().execute("http://" + DataManager.connectURL + "/getUserMission");
             new requestGetUserActionInfo().execute("http://" + DataManager.connectURL + "/getUserAction");
         }
         missionListView = findViewById(R.id.listview_mission);
@@ -78,45 +78,6 @@ public class UserMissionActivity extends AppCompatActivity {
 
         // Generate and set data for line chart
 
-    }
-
-    public class requestGetUserMissionInfo extends AsyncTask<String, String, String> {
-        String userID, userName;
-        @Override
-        protected void onPreExecute() {
-            String userInfo = DataManager.getSharedPreferences_UserInfo(getApplicationContext());
-            try{
-                JSONObject userJson = new JSONObject(userInfo);
-                this.userID = userJson.getString("user_id");
-                this.userName = userJson.getString("user_name");
-
-            }catch (Exception e){
-                Log.i("seo","requestGetUserMissionInfo JSON error : " + e);
-            }
-            reqDialog.run();
-            super.onPreExecute();
-        }
-
-        @Override
-        protected String doInBackground(String... urls) {
-            String result;
-            ContentValues value = new ContentValues(); // key와 value을 SET으로 저장하는 객체.
-            value.put("user_id", this.userID);
-            value.put("user_name", this.userName);
-            String url = "http://" + DataManager.connectURL + "/getUserMission";
-
-            HttpGetRequestClass requestHttpURLConnection = new HttpGetRequestClass();
-            result = requestHttpURLConnection.request(url, value); // 해당 URL로 부터 결과물을 얻어온다.
-            return result;
-        }
-        //doInBackground메소드가 끝나면 여기로 와서 텍스트뷰의 값을 바꿔준다.
-        @Override
-        protected void onPostExecute(String result) {
-            super.onPostExecute(result);
-            reqDialog.close();
-            Log.i("seo","result : " + result);
-            generateMissionDataList(result);
-        }
     }
     public class requestGetUserActionInfo extends AsyncTask<String, String, String> {
         String userID, userName;
@@ -151,15 +112,23 @@ public class UserMissionActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
-//            Log.i("seo","result : " + result);
+            reqDialog.close();
+            JSONObject resultToJson = null;
+            try {
+                resultToJson = new JSONObject(result);
+                generateGraphData( resultToJson.getString("last_100"));
+                generateMissionDataList(resultToJson.getString("last_missionList"));
+                Log.i("seo","resultToJson.getString(\"last_missionList\") : " + resultToJson.getString("last_missionList"));
+                mStepChart.setContentsData(resultToJson.getString("contentCount"));
+                resetViewport();
+                nameToComment(this.userName);
 
-            mStepChart.setContentsData(result);
-            generateGraphData(result);
-            resetViewport();
+            }catch (Exception e){
+                Log.i("seo", "error : " + e);
+            }
         }
     }
     private void generateMissionDataList(String resultData){
-        Log.i("seo","resultData : " + resultData);
         try{
             JSONArray jsonArray = new JSONArray(resultData);
             for(int index = 0; index < jsonArray.length(); index ++){
@@ -175,7 +144,7 @@ public class UserMissionActivity extends AppCompatActivity {
             int value = (int)(((float)jsonArray.length() / 28) * 100);
             missionLogListAdapter.notifyDataSetChanged();
         }catch (Exception e){
-
+            Log.i("seo","generateMissionDataList error : " + e);
         }
     }
     private class ListViewClickListener implements AdapterView.OnTouchListener{
@@ -204,7 +173,6 @@ public class UserMissionActivity extends AppCompatActivity {
 
                 String dateString = jsonObject.getString("group_date");
                 String getXLable = dateString.substring(dateString.length()-2, dateString.length()) + "일";
-                Log.i("seo","getXLable : " + getXLable);
 
                 values.add(new PointValue(i, value));
                 axisValues.add(new AxisValue(i).setLabel(getXLable));
@@ -266,5 +234,24 @@ public class UserMissionActivity extends AppCompatActivity {
             ex.printStackTrace();
         }
         return json;
+    }
+
+
+    // 이름에따라 분석설명을 적어주는것. 임시용
+    private void nameToComment(String name){
+        TextView last100 = findViewById(R.id.txt_last_100_comment);
+        TextView chart_userContents = findViewById(R.id.txt_content_comment);
+
+        switch (name){
+            case "최원기" :
+                last100.setText(name +"님의 최근 3개월 프로그램 사용빈도입니다.\n\n" +
+                        "꾸준한 활동으로 인해, 최근에 등급을 높히셨군요!. 이 활동을 꾸준히 유지하신다면, 좋은 결과가 있을것입니다." +
+                        "프로그램 속의 컨텐츠를 다 해보셨다면, '자유코딩'을 통해 응용하여 로봇을 조종해보세요!");
+
+                chart_userContents.setText(name + "님의 종합 활동 내역입니다.\n\n" +
+                        "높은 접속률과, 문제풀이 활동은 적극적이나, 자율적인 코딩활동이나, 로봇을 컨트롤하는 활동이 부족합니다." +
+                        "문제풀이 진행후에, 자유로운 코딩활동을 통해 응용력을 길러보세요!");
+                break;
+        }
     }
 }

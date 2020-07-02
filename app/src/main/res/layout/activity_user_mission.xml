@@ -93,7 +93,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:scale_base_width="1440"
-                app:scale_base_height="1300">
+                app:scale_base_height="1850">
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="wrap_content"
@@ -128,13 +128,26 @@
                     android:background="@drawable/missionlist_background">
                 </lecho.lib.hellocharts.view.LineChartView>
 
+                <TextView
+                    android:id="@+id/txt_last_100_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="480"
+                    app:scale_left="60"
+                    app:scale_top="1300"
+                    app:scale_width="1336"
+                    android:fontFamily="@font/nixgonf_m"
+                    android:textColor="#303030"
+                    app:scale_textsize="60"
+                    android:background="@drawable/shadow_background"/>
+
             </com.example.codinggameapp.Utils.ScalableLayout>
 
             <com.example.codinggameapp.Utils.ScalableLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:scale_base_width="1440"
-                app:scale_base_height="1800">
+                app:scale_base_height="1900">
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="wrap_content"
@@ -162,11 +175,24 @@
                     android:id="@+id/chart_userContents"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:scale_height="1336"
+                    app:scale_height="1100"
                     app:scale_left="60"
                     app:scale_top="159"
                     app:scale_width="1336"
                     android:background="@drawable/menu_layout_border_white"/>
+
+                <TextView
+                    android:id="@+id/txt_content_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:scale_height="480"
+                    app:scale_left="60"
+                    app:scale_top="1300"
+                    app:scale_width="1336"
+                    android:fontFamily="@font/nixgonf_m"
+                    android:textColor="#303030"
+                    app:scale_textsize="60"
+                    android:background="@drawable/shadow_background"/>
             </com.example.codinggameapp.Utils.ScalableLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
