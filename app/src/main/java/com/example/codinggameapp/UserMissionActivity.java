@@ -118,7 +118,6 @@ public class UserMissionActivity extends AppCompatActivity {
                 resultToJson = new JSONObject(result);
                 generateGraphData( resultToJson.getString("last_100"));
                 generateMissionDataList(resultToJson.getString("last_missionList"));
-                Log.i("seo","resultToJson.getString(\"last_missionList\") : " + resultToJson.getString("last_missionList"));
                 mStepChart.setContentsData(resultToJson.getString("contentCount"));
                 resetViewport();
                 nameToComment(this.userName);
@@ -210,7 +209,7 @@ public class UserMissionActivity extends AppCompatActivity {
         // Reset viewport height range to (0,100)
         final Viewport v = new Viewport(chartTop.getMaximumViewport());
         v.bottom = 0;
-        v.top = 80;
+        v.top = 150;
         v.left = 0;
         v.right = 7;
         chartTop.setMaximumViewport(v);
@@ -252,6 +251,27 @@ public class UserMissionActivity extends AppCompatActivity {
                         "높은 접속률과, 문제풀이 활동은 적극적이나, 자율적인 코딩활동이나, 로봇을 컨트롤하는 활동이 부족합니다." +
                         "문제풀이 진행후에, 자유로운 코딩활동을 통해 응용력을 길러보세요!");
                 break;
+
+        case "백향미" :
+            last100.setText(name +"님의 최근 3개월 프로그램 사용빈도입니다.\n\n" +
+                    "꾸준한 활동으로 인해, 최근에 등급을 높히셨군요!. 이 활동을 꾸준히 유지하신다면, 좋은 결과가 있을것입니다." +
+                    "프로그램 속의 컨텐츠를 다 해보셨다면, '자유코딩'을 통해 응용하여 로봇을 조종해보세요!");
+
+            chart_userContents.setText(name + "님의 종합 활동 내역입니다.\n\n" +
+                    "높은 접속률과, 로봇조종을 통한 놀이활동에 대한 흥미가 높으시군요!\n" +
+                    "하지만 프로그램내에 로봇 조종뿐만 아니라 재밌고 다양한 퀴즈와 컨텐츠들이 담겨있습니다.\n" +
+                    "퀴즈들을 풀면서 생각하는 습관을 길러보세요!");
+            break;
+
+        case "김철순" :
+            last100.setText(name +"님의 최근 3개월 프로그램 사용빈도입니다.\n\n" +
+                    "전반적으로 높은 활동량을 보이고 있습니다." +
+                    "프로그램의 컨텐츠를 활용하여 더 좋은 코딩을 시작해보세요!");
+
+            chart_userContents.setText(name + "님의 종합 활동 내역입니다.\n\n" +
+                    "전반적으로 다양한 활동을 하며, 프로그램을 사용하고 있습니다.!\n" +
+                    "꾸준한 활동을 지속한다면, 사고적인 능력과 인지도가 개선될것으로 예상됩니다.\n");
+            break;
         }
     }
 }

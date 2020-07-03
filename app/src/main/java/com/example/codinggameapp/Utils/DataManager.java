@@ -9,8 +9,8 @@ import com.clj.fastble.data.BleDevice;
 import org.json.JSONObject;
 
 public class DataManager {
-//    public static String connectURL = "183.111.226.60:13700"; // 서버컴퓨터 IP
-    public static String connectURL = "192.168.0.52:3000"; // 개발컴퓨터 IP
+    public static String connectURL = "183.111.226.60:13700"; // 서버컴퓨터 IP
+//    public static String connectURL = "192.168.0.52:3000"; // 개발컴퓨터 IP
     static SharedPreferences pref;
     private static String BLE = "BLE";
     public static BleDevice mBleDevice;

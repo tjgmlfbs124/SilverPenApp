@@ -20,7 +20,7 @@ public class TestActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test);
-        BluetoothSendManager.onNotify(getApplicationContext());
+//        BluetoothSendManager.onNotify(getApplicationContext());
         btn_start = (TextView)findViewById(R.id.btn_start);
         text_testResult = (TextView)findViewById(R.id.text_testResult);
         img_barcode = (ImageView)findViewById(R.id.img_test);

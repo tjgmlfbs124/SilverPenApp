@@ -223,7 +223,6 @@ public class BluetoothActivity extends AppCompatActivity {
                         break;
                     case "camRobot" :
                         BluetoothSendManager.sendProtocol("ff060023");
-                        BluetoothSendManager.onNotify(getApplicationContext());
                         break;
                     case "weeemake" :
                         BluetoothSendManager.sendProtocol("ff23");

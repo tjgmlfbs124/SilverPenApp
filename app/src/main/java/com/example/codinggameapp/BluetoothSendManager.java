@@ -18,6 +18,8 @@ import com.example.codinggameapp.Utils.DataManager;
 import java.nio.charset.Charset;
 import java.text.SimpleDateFormat;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class BluetoothSendManager {
     static BluetoothGattService service = BleManager.getInstance().getBluetoothGattServices(DataManager.getConnectedDevice()).get(2);
     static BluetoothGattCharacteristic characteristic = BleManager.getInstance().getBluetoothGattCharacteristics(service).get(0);
@@ -80,8 +82,7 @@ public class BluetoothSendManager {
         return isReadValue;
     }
 
-    public static void onNotify(Context context) {
-        final Context getContext = context;
+    public static void onNotify(final AppCompatActivity activity) {
         Log.i( "ckw","startNotify" );
 
         BleManager.getInstance().notify(
@@ -125,11 +126,9 @@ public class BluetoothSendManager {
                 }*/
                 public void onCharacteristicChanged(byte[] data) {
                     String str = new String(data, Charset.forName("UTF-8"));
-                    String str1;
-
-                    //Toast mToast = Toast.makeText(getContext, str, Toast.LENGTH_SHORT);
-                    //mToast.show();
                     Log.i("@ckw", "barcode: "+str);
+                    JoystickActivity.showPicture(activity.getSupportFragmentManager(), str);
+
                 }
             });
     }

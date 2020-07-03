@@ -1,7 +1,6 @@
 package com.google.blockly.android.ui;
 
 import android.content.ClipDescription;
-import android.support.v7.widget.RecyclerView;
 import android.view.DragEvent;
 
 import com.google.blockly.android.BlocklyTestCase;

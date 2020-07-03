@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/mutator_procedure_def_header_format"/>
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/mutator_procedure_def_recycler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

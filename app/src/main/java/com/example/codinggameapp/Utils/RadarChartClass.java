@@ -87,13 +87,42 @@ public class RadarChartClass {
 
     public void setContentsData(String result){
         ArrayList<RadarEntry> entries1 = new ArrayList<>();
-
+        for(int i=0; i<5; i++){
+            entries1.add(new RadarEntry(0));
+        }
         try{
             JSONArray jsonArray = new JSONArray(result);
+            Log.i("seo","result : " + result);
             for (int i = 0; i < jsonArray.length(); i++){
                 JSONObject object = new JSONObject(jsonArray.get(i).toString());
-                entries1.add(new RadarEntry( Float.parseFloat(object.getString("count"))));
+                switch(object.getString("user_action")){
+                    case "LOGIN" :
+                        entries1.set(3, new RadarEntry( Float.parseFloat(object.getString("count"))));
+                        break;
+                    case "SEQUENT_MOVE" :
+                        entries1.set(2, new RadarEntry( Float.parseFloat(object.getString("count"))));
+                        break;
+                    case "JOYSTICK" :
+                        entries1.set(1, new RadarEntry( Float.parseFloat(object.getString("count"))));
+                        break;
+                    case "CODING" :
+                        entries1.add(5, new RadarEntry( Float.parseFloat(object.getString("count"))));
+                        break;
+                    case "REPEAT_MOVE" :
+                        entries1.set(0, new RadarEntry( Float.parseFloat(object.getString("count"))));
+                        break;
+                    case "CODITION_MOVE" :
+                        entries1.set(4, new RadarEntry( Float.parseFloat(object.getString("count"))));
+                        break;
+                }
             }
+            Log.i("seo","size : " + entries1.get(0));
+            Log.i("seo","size : " + entries1.get(1));
+            Log.i("seo","size : " + entries1.get(2));
+            Log.i("seo","size : " + entries1.get(3));
+            Log.i("seo","size : " + entries1.get(4));
+            Log.i("seo","size : " + entries1.get(5));
+            Log.i("seo","size : " + entries1.get(6));
         }catch (Exception e){
             Log.i("seo","e : " + e);
         }

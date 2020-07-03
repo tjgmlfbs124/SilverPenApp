@@ -1,5 +1,6 @@
 package com.example.codinggameapp;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.pm.ActivityInfo;
 import android.os.Vibrator;
@@ -12,6 +13,7 @@ import android.widget.Toast;
 
 import com.andretietz.android.controller.DirectionView;
 import com.andretietz.android.controller.InputView;
+import com.example.codinggameapp.Dialog.PictureDialog;
 import com.example.codinggameapp.JoystickFragment.MelodyFragment;
 import com.example.codinggameapp.JoystickFragment.MotorFragement;
 import com.example.codinggameapp.JoystickFragment.RgbFragment;
@@ -30,6 +32,7 @@ public class JoystickActivity extends AppCompatActivity {
     private String robot;
     private String serialHexValue = "";
     private DirectionView viewDirection;
+    public static PictureDialog pictureDialog = new PictureDialog();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +55,12 @@ public class JoystickActivity extends AppCompatActivity {
         img_tone.setOnTouchListener(new ImageTouchListener());
         img_melody.setOnClickListener(new ImageClickListener());
         img_motor.setOnClickListener(new ImageClickListener());
+
+        if(!robot.equals("")) {
+            BluetoothSendManager.onNotify(this);
+        }
+
+
 
     }
     private class ImageTouchListener implements View.OnTouchListener{ // 부저 터치
@@ -258,5 +267,19 @@ public class JoystickActivity extends AppCompatActivity {
                 break;
         }
         return direction;
+    }
+
+    public static void showPicture(FragmentManager manager, String barcode){
+        try{
+            if(!pictureDialog.isVisible()){
+                Bundle args = new Bundle();
+                args.putString("barcode", barcode);
+                pictureDialog.setArguments(args);
+                pictureDialog.show(manager, "Dialog");
+            }
+        }catch (Exception e){
+            Log.i("seo","Error  :"  + e);
+        }
+
     }
 }
