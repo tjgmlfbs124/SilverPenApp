@@ -1,7 +1,9 @@
 package com.example.codinggameapp;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.pm.ActivityInfo;
 import android.os.Vibrator;
 import android.os.Bundle;
@@ -9,6 +11,7 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.andretietz.android.controller.DirectionView;
@@ -18,9 +21,12 @@ import com.example.codinggameapp.JoystickFragment.MelodyFragment;
 import com.example.codinggameapp.JoystickFragment.MotorFragement;
 import com.example.codinggameapp.JoystickFragment.RgbFragment;
 import com.example.codinggameapp.Utils.DataManager;
+import com.example.codinggameapp.Utils.ScalableLayout;
+import com.example.codinggameapp.Utils.Stopwatch;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
@@ -30,26 +36,36 @@ import androidx.fragment.app.FragmentTransaction;
 public class JoystickActivity extends AppCompatActivity {
     private static AppCompatImageView img_light, img_tone, img_melody, img_motor;
     private static LinearLayout fragment_joystick;
-    private Vibrator vibrator;
+    public static Vibrator vibrator;
     private String preFragment = ""; // 열었던 Fragment 저장
     private String robot;
     private String serialHexValue = "";
     private DirectionView viewDirection;
     public static PictureDialog pictureDialog = new PictureDialog();
+    public static TextView txt_navi_count, txt_navi_timer;
+    public static ScalableLayout titlebar_logo, titlebar_count;
+    public static ArrayList<Integer> getNaviList = new ArrayList<Integer>();
+    public static Stopwatch stopWatch = new Stopwatch();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-        setContentView(R.layout.activity_joystick);
-        vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
-        robot = DataManager.getSaveConnectedRobot(getApplicationContext());
-        img_light = (AppCompatImageView) findViewById(R.id.img_light);
-        img_tone = (AppCompatImageView) findViewById(R.id.img_Tone);
-        img_melody = (AppCompatImageView) findViewById(R.id.img_melody);
-        img_motor = (AppCompatImageView) findViewById(R.id.img_motor);
 
-        fragment_joystick = (LinearLayout)findViewById(R.id.fragment_joystick);
+        vibrator = (Vibrator)getSystemService(Context.VIBRATOR_SERVICE);
+        setContentView(R.layout.activity_joystick);
+        robot = DataManager.getSaveConnectedRobot(getApplicationContext());
+        img_light = findViewById(R.id.img_light);
+        img_tone = findViewById(R.id.img_Tone);
+        img_melody = findViewById(R.id.img_melody);
+        img_motor =  findViewById(R.id.img_motor);
+        fragment_joystick = findViewById(R.id.fragment_joystick);
+
+        txt_navi_count =  findViewById(R.id.txt_navi_count);
+        txt_navi_timer = findViewById(R.id.txt_timer);
+
+        titlebar_logo = findViewById(R.id.titlebar_logo);
+        titlebar_count = findViewById(R.id.titlebar_count);
 
         viewDirection = (DirectionView)findViewById(R.id.viewDirection);
         viewDirection.setOnButtonListener(new ActionListener());
@@ -63,8 +79,8 @@ public class JoystickActivity extends AppCompatActivity {
             BluetoothSendManager.onNotify(this);
         }
 
-
-
+        stopWatch.setListener(new StopwatchListener());
+        getNaviList.clear();
     }
     private class ImageTouchListener implements View.OnTouchListener{ // 부저 터치
         @Override
@@ -287,19 +303,65 @@ public class JoystickActivity extends AppCompatActivity {
 
     }
 
-    public static void addNaviCount(FragmentManager manager, String barcode){
-        try{
-            if(!pictureDialog.isAdded()){
-                Bundle args = new Bundle();
-                args.putString("barcode", barcode);
-                pictureDialog.setArguments(args);
-                pictureDialog.show(manager, "Dialog");
+    public static void addNaviCount(Activity activity, String barcode){
+        int mBarcode = Integer.parseInt(barcode);
+        if(!isDuplicationNavi(mBarcode)){
+            getNaviList.add(mBarcode);
+            vibrator.vibrate(200);
+            if(titlebar_count.getVisibility() == View.GONE){
+                stopWatch.start();
+                titlebar_logo.setVisibility(View.GONE);
+                titlebar_count.setVisibility(View.VISIBLE);
             }
+            txt_navi_count.setText("X" + getNaviList.size());
+        }
+        else{
+            Toast.makeText(activity, "이미 획득한 나비입니다.", 200).show();
+        }
+        try{
+
         }catch (Exception e){
             Log.i("seo","Error  :"  + e);
         }
-
     }
 
+    public static boolean isDuplicationNavi(int mBarcode){
+        if(getNaviList.contains(mBarcode))
+            return true;
+        else
+            return false;
+    }
 
+    class StopwatchListener implements Stopwatch.StopWatchListener{
+        @Override
+        public void onTick(String time) {
+            int count = 30 - Integer.parseInt(time);
+            if (count <= 0){
+                stopWatch.stop();
+                vibrator.vibrate(1000);
+                AlertDialog.Builder builder = new AlertDialog.Builder(JoystickActivity.this);
+                builder.setTitle("놀이 결과");
+                builder.setMessage("획득한 나비 숫자 : " + getNaviList.size() +"개");
+                builder.setPositiveButton("다시하기", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        getNaviList.clear();
+                        titlebar_logo.setVisibility(View.VISIBLE);
+                        titlebar_count.setVisibility(View.GONE);
+                        Toast.makeText(JoystickActivity.this,"게임을 다시 시작해주세요!",Toast.LENGTH_SHORT).show();
+                    }
+                });
+                builder.setNegativeButton("종료", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+                });
+                builder.show();
+            }
+            else{
+                txt_navi_timer.setText(count+"");
+            }
+        }
+    }
 }

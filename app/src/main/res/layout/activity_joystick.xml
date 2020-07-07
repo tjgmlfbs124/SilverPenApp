@@ -9,6 +9,7 @@
     android:background="#ffffff"
     tools:ignore="missingPrefix">
     <com.example.codinggameapp.Utils.ScalableLayout
+        android:id="@+id/titlebar_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:scale_base_width="2560"
@@ -23,6 +24,62 @@
             app:scale_top="0"
             app:scale_width="400"
             app:srcCompat="@drawable/logo_color_white"/>
+    </com.example.codinggameapp.Utils.ScalableLayout>
+
+    <com.example.codinggameapp.Utils.ScalableLayout
+        android:id="@+id/titlebar_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:scale_base_width="2560"
+        app:scale_base_height="200"
+        android:background="#3a3a3a"
+        android:visibility="gone">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:scale_height="200"
+            app:scale_left="20"
+            app:scale_top="0"
+            app:scale_width="200"
+            app:srcCompat="@drawable/img_timer"/>
+
+        <TextView
+            android:id="@+id/txt_timer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:scale_height="230"
+            app:scale_left="20"
+            app:scale_top="0"
+            app:scale_width="200"
+            android:fontFamily="@font/nixgonf_bold"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            app:scale_textsize="60"
+            android:text="30"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:scale_height="150"
+            app:scale_left="2100"
+            app:scale_top="25"
+            app:scale_width="150"
+            app:srcCompat="@drawable/img_navi"/>
+
+        <TextView
+            android:id="@+id/txt_navi_count"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:scale_height="200"
+            app:scale_left="2280"
+            app:scale_top="0"
+            app:scale_width="200"
+            android:fontFamily="@font/nixgonf_bold"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="X 0"/>
     </com.example.codinggameapp.Utils.ScalableLayout>
 
     <ScrollView
@@ -102,15 +159,6 @@
                 app:scale_top="150"
                 app:scale_width="900">
             </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:scale_height="200"
-                app:scale_left="0"
-                app:scale_top="1040"
-                app:scale_width="900"
-                android:background="#3cffffff"/>
 
 
 
