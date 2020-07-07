@@ -19,6 +19,9 @@ import com.example.codinggameapp.JoystickFragment.MotorFragement;
 import com.example.codinggameapp.JoystickFragment.RgbFragment;
 import com.example.codinggameapp.Utils.DataManager;
 
+import java.io.IOException;
+import java.io.InputStream;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.fragment.app.FragmentManager;
@@ -271,7 +274,7 @@ public class JoystickActivity extends AppCompatActivity {
 
     public static void showPicture(FragmentManager manager, String barcode){
         try{
-            if(!pictureDialog.isVisible()){
+            if(!pictureDialog.isAdded()){
                 Bundle args = new Bundle();
                 args.putString("barcode", barcode);
                 pictureDialog.setArguments(args);
@@ -282,4 +285,6 @@ public class JoystickActivity extends AppCompatActivity {
         }
 
     }
+
+
 }

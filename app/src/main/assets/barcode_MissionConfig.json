@@ -1,91 +1,97 @@
 {
-  "0101" : {
+  "barcode0" : {
     "title" : "인사하기",
     "message01" : "친구들에게 인사해봅시다.",
     "message02" : "횟수는 상관없어요!",
     "image" : "mission_dialog_img_0101"
   },
-  "0102" : {
+  "barcode1" : {
     "title" : "출발 앞으로!",
     "message01" : "앞으로 이동하기",
     "message02" : "앞으로 3칸 이동해보세요.",
     "image" : "mission_dialog_img_0102"
   },
-  "0103" : {
+  "barcode2" : {
     "title" : "아이 깜짝이야!",
     "message01" : "뒤로 이동하기",
     "message02" : "뒤로 4칸 이동해보세요.",
     "image" : "mission_dialog_img_0103"
   },
-  "0104" : {
+  "barcode3" : {
     "title" : "조심조심",
     "message01" : "반복실행하기",
     "message02" : "앞으로, 뒤로 이동을 2회 반복해보세요.",
     "image" : "mission_dialog_img_0104"
   },
-  "0105" : {
+  "barcode4" : {
     "title" : "신난다",
     "message01" : "춤을 춰볼까요?",
     "message02" : "한바퀴를 돌아 제자리로 돌아와보세요.",
     "image" : "mission_dialog_img_0105"
   },
-  "0201" : {
+  "barcode5" : {
     "title" : "다시 앞으로!",
     "message01" : "앞으로 반복 이동하기",
     "message02" : "앞으로 3회 반복해서 이동해보세요.",
     "image" : "mission_dialog_img_0105"
   },
-  "0202" : {
+  "barcode6" : {
     "title" : "바퀴가 늪에 빠졌어",
     "message01" : "앞,뒤 반복 이동하기",
     "message02" : "앞으로, 뒤로 2회 반복해서 이동해보세요!",
     "image" : "mission_dialog_img_0105"
   },
-  "0203" : {
+  "barcode7" : {
     "title" : "주위가 어두워!",
     "message01" : "불을 켜볼까요?",
     "message02" : "두번 반복해서 켜고 꺼보세요",
     "image" : "mission_dialog_img_0105"
   },
-  "0204" : {
+  "barcode8" : {
     "title" : "몰래 불켜기",
     "message01" : "불을 키고 이동하기",
     "message02" : "두번 반복해서 불을 켜고 끈뒤, \n 앞으로 2회 이동하세요!",
     "image" : "mission_dialog_img_0105"
   },
-  "0205" : {
+  "barcode9" : {
     "title" : "경고음 울리기",
     "message01" : "소리내기",
     "message02" : "경고음을 세번 반복해서 울려봅시다",
     "image" : "mission_dialog_img_0105"
   },
-  "0301" : {
+  "barcode10" : {
     "title" : "목표지점 이동하기",
     "message01" : "숫자 2까지 이동해보세요.",
     "message02" : "",
     "image" : "mission_dialog_img_0105"
   },
-  "0302" : {
+  "barcode11" : {
     "title" : "목표지점 이동하기",
-    "message01" : "숫자 4까지 이동해보세요.",
+    "message01" : "숫자 3까지 이동해보세요.",
     "message02" : "",
     "image" : "mission_dialog_img_0105"
   },
-  "0303" : {
+  "barcode12" : {
     "title" : "목표지점 이동하기",
-    "message01" : "숫자 2까지 이동후 4로 이동하세요",
+    "message01" : "숫자 3까지 이동해보기",
     "message02" : "",
     "image" : "mission_dialog_img_0105"
   },
-  "0304" : {
+  "barcode13" : {
     "title" : "목표지점 이동하기",
-    "message01" : "숫자 3까지 이동후 1로 이동하세요",
+    "message01" : "숫자 5까지 이동하고 되돌아오기",
     "message02" : "",
     "image" : "mission_dialog_img_0105"
   },
-  "0305" : {
+  "barcode14" : {
     "title" : "목표지점 이동하기",
-    "message01" : "숫자 5까지 이동후 2로 이동해보세요",
+    "message01" : "숫자 5까지 가보기",
+    "message02" : "",
+    "image" : "mission_dialog_img_0105"
+  },
+  "barcode15" : {
+    "title" : "목표지점 이동하기",
+    "message01" : "숫자 5까지 가보기",
     "message02" : "",
     "image" : "mission_dialog_img_0105"
   }

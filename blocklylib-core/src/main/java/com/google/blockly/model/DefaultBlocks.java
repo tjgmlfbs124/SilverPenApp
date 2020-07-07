@@ -54,7 +54,7 @@ public final class DefaultBlocks {
     // toolbox1 : 청창사 사업 카테고리 (간단한 블록별 카테고리, 로봇 카테고리, 감정 카테고리)
     // toolbox2 : 실버 버전 (감정 카테고리, 로봇 카테고리)
     // toolbox3 : 계명대 과제용 (간단한 블록별 카테고리, 로봇카테고리, 감정카테고리);
-    public static String TOOLBOX_PATH = "default/toolbox3.xml"; // @SEO Toolbox 기본셋팅
+    public static String TOOLBOX_PATH = "default/toolbox2.xml"; // @SEO Toolbox 기본셋팅
 
     /**
      * Default language definition uses the JavaScript language generator.

@@ -44,7 +44,7 @@
             app:scale_textsize="30"
             android:textColor="#303030"
             android:fontFamily="@font/nixgonf_bold"
-            android:text="바코드가 감지되었습니다."
+            android:text="미션이 도착했습니다."
             android:gravity="center|left"/>
 
         <androidx.appcompat.widget.AppCompatImageView
@@ -71,14 +71,48 @@
             android:gravity="center"/>
 
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/img_family"
+        <TextView
+            android:id="@+id/txt_title"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:scale_height="350"
-            app:scale_left="650"
+            app:scale_height="60"
+            app:scale_left="580"
             app:scale_top="200"
-            app:scale_width="700"/>
+            app:scale_width="700"
+            app:scale_textsize="40"
+            android:textColor="#303030"
+            android:fontFamily="@font/nixgonf_bold"
+            android:text="미션 -"
+            android:gravity="center|left"/>
+
+        <TextView
+            android:id="@+id/txt_message02"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:scale_height="150"
+            app:scale_left="600"
+            app:scale_top="300"
+            app:scale_width="680"
+            app:scale_textsize="35"
+            android:textColor="#404040"
+            android:fontFamily="@font/nixgonf_bold"
+            android:text="미션 -"
+            android:gravity="center|left"/>
+
+        <TextView
+            android:id="@+id/btn_missionOk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:scale_height="100"
+            app:scale_left="1025"
+            app:scale_top="475"
+            app:scale_width="250"
+            app:scale_textsize="35"
+            android:textColor="#404040"
+            android:fontFamily="@font/nixgonf_bold"
+            android:background="@drawable/menu_layout_left_gradient"
+            android:text="GO"
+            android:gravity="center"/>
 
 
     </com.example.codinggameapp.Utils.ScalableLayout>>

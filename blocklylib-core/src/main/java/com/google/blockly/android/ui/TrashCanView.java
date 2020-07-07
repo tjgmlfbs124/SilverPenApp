@@ -21,8 +21,6 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.DragEvent;
 import android.view.View;
-import android.widget.ImageView;
-
 import com.google.blockly.android.R;
 
 import java.lang.annotation.Retention;
@@ -71,8 +69,9 @@ public class TrashCanView extends AppCompatImageView {
                 0, 0);
         try {
             //noinspection ResourceType
-//            setDefaultIcon(a.getResourceId(R.styleable.TrashCanView_defaultIcon, R.drawable.svg_trash_close));
-//            setOnHoverIcon(a.getResourceId(R.styleable.TrashCanView_onHoverIcon, R.drawable.blockly_trash_open));
+
+//            setDefaultIcon(a.getResourceId(R.styleable.TrashCanView, R.drawable.svg_trash_close));
+//            setOnHoverIcon(a.getResourceId(R.styleable.TrashCanView, R.drawable.blockly_trash_open));
         } finally {
             a.recycle();
         }

@@ -15,30 +15,15 @@
 
 <!-- toolbox1 => level1 -->
 <toolbox>
-    <category name="로봇놀이" colour="#000000">
+    <category name="블록" colour="#000000">
         <block type="controls_repeat_ext">
             <value name="TIMES">
                 <shadow type="math_number">
-                    <field name="NUM">2</field>
+                    <field name="NUM">10</field>
                 </shadow>
             </value>
         </block>
-        <block type="rgb_right_on"></block>
-        <block type="mission_go"></block>
-        <block type="mission_left"></block>
-        <block type="mission_right"></block>
-        <block type="mission_back"></block>
-        <block type="mission_stop"></block>
-    </category>
-
-    <category name="감정표현" colour="#000000">
-        <block type="face_bored_01"></block>
-        <block type="face_bored_02"></block>
-        <block type="face_bored_04"></block>
-        <block type="face_bored_05"></block>
-        <block type="face_bored_06"></block>
-        <block type="face_bored_07"></block>
-        <block type="face_bored_08"></block>
-        <block type="face_bored_09"></block>
+        <block type="oneStep_GO"></block>
+        <block type="oneStep_BACK"></block>
     </category>
 </toolbox>

@@ -21,16 +21,18 @@ public class MissionManageClass {
     public static Context mContext;
     public static String getCompleteJsonFile;
 
-    public MissionManageClass(Context context){ // Constructor
+    public MissionManageClass(Context context, String mode){ // Constructor
         fieldMetrix = new int[100][100];
         mContext = context;
-        initObject();
+        initObject(mode);
+        Log.i("seo","[1] mode : " + mode);
     }
-    static void initObject(){
+    static void initObject(String mode){
         objectX = 50;
         objectY = 50;
         runBlock = new ArrayList<String>();
-        getCompleteJsonFile = getJsonString(mContext);
+        getCompleteJsonFile = getJsonString(mContext, mode);
+        Log.i("seo","[2] mode : " + mode);
         completeScore = 0;
     }
 
@@ -46,7 +48,8 @@ public class MissionManageClass {
                 int complete_objectX = completeObject.getInt("x");
                 int complete_objectY = completeObject.getInt("y");
                 int complete_minBlock = completeObject.getInt("minBlock");
-                JSONArray complete_EssentialBlock= completeObject.getJSONArray("EssentialBlock");
+                JSONArray complete_EssentialBlock;
+                complete_EssentialBlock = completeObject.getJSONArray("EssentialBlock");
                 Log.i("seo","complete_objectX : " + complete_objectX);
                 Log.i("seo","complete_objectY : " + complete_objectY);
                 Log.i("seo","objectX : " + objectX);
@@ -113,10 +116,17 @@ public class MissionManageClass {
         }
     }
 
-    private static String getJsonString(Context context){
+    private static String getJsonString(Context context, String mode){
+        Log.i("seo","[3] mode : " + mode);
+        if(mode == null) mode = "";
         String json = "";
         try {
-            InputStream is = context.getAssets().open("complete.json");
+
+            InputStream is;
+            if(mode.equals("barcode"))
+                is = context.getAssets().open("barcode_MissionComplete.json");
+            else
+                is = context.getAssets().open("complete.json");
             int fileSize = is.available();
 
             byte[] buffer = new byte[fileSize];

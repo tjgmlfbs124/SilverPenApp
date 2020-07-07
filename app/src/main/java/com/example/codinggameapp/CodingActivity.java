@@ -51,7 +51,7 @@ public class CodingActivity extends AbstractBlocklyActivity implements CodeEvent
     private static final List<String> BLOCK_DEFINITIONS = DefaultBlocks.getAllBlockDefinitions();
     private static final List<String> LUA_GENERATORS = Arrays.asList();
     private ImageView CodeEXEBtn;
-    private String isMission;
+    private String isMission, mode;
 
     private boolean isRun = false;
     private int missionClearLevel = 0;
@@ -64,7 +64,19 @@ public class CodingActivity extends AbstractBlocklyActivity implements CodeEvent
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-        missionManager = new MissionManageClass(getApplicationContext());
+
+
+        Intent intent = getIntent();
+        Bundle bundle = intent.getExtras();
+        if(bundle != null){
+            isMission =  bundle.getString("mission", "");
+            mode = bundle.getString("mode", "");
+        }
+        else
+            isMission = null;
+
+
+        missionManager = new MissionManageClass(getApplicationContext(), mode);
         mHandler = new Handler();
 
         CodeEXEBtn = (ImageView) findViewById(R.id.blockly_code_exe_button);
@@ -80,13 +92,6 @@ public class CodingActivity extends AbstractBlocklyActivity implements CodeEvent
             }
         });
         CodeEXEBtn.setOnClickListener(new ButtonClickListener());
-
-        Intent intent = getIntent();
-        Bundle bundle = intent.getExtras();
-        if(bundle != null)
-            isMission =  bundle.get("mission").toString();
-        else
-            isMission = null;
 
         Log.i("seo","isMission : " + isMission);
         onClearWorkspace();
@@ -121,6 +126,7 @@ public class CodingActivity extends AbstractBlocklyActivity implements CodeEvent
                                 m_handler.postDelayed(this,1000);
                             }
                             else{
+                                BluetoothSendManager.sendProtocol("ff00000023");
                                 if(isMission == null) {
                                     isRun = false;
                                     return;
@@ -129,12 +135,16 @@ public class CodingActivity extends AbstractBlocklyActivity implements CodeEvent
                                 AlertDialog.Builder builder = new AlertDialog.Builder(CodingActivity.this);
                                 builder.setTitle("알림");
 
-                                if(missionClearLevel != 0){ // 정답. 서버로 점수 전송
+//                                if(missionClearLevel != 0){ // 정답. 서버로 점수 전송
                                     new requestMissionResult().execute("http://" + DataManager.connectURL + "/submitMission");
                                     builder.setMessage("다음으로 넘어가볼까?");
                                     builder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
                                         @Override
                                         public void onClick(DialogInterface dialog, int which) {
+                                            if(mode.equals("barcode")){
+                                                Intent intent = new Intent(CodingActivity.this, JoystickActivity.class);
+                                                startActivity(intent);
+                                            }
                                             // 다음
                                         }
                                     });
@@ -144,21 +154,21 @@ public class CodingActivity extends AbstractBlocklyActivity implements CodeEvent
                                             finish();
                                         }
                                     });
-                                }
-                                else{ // 오답
-                                    builder.setMessage("틀렸어요 ! \n 다시한번 생각해봅시다.");
-                                    builder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
-                                        @Override
-                                        public void onClick(DialogInterface dialog, int which) {
-                                            onClearWorkspace();
-                                        }
-                                    });
-                                }
+//                                }
+//                                else{ // 오답
+//                                    builder.setMessage("틀렸어요 ! \n 다시한번 생각해봅시다.");
+//                                    builder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+//                                        @Override
+//                                        public void onClick(DialogInterface dialog, int which) {
+//                                            onClearWorkspace();
+//                                        }
+//                                    });
+//                                }
                                 isRun = false;
                                 builder.show();
                                 m_handler.removeCallbacks(m_handlerTask);
                                 mHandler.removeCallbacksAndMessages(null);
-                                missionManager.initObject(); // 미션 관련된 정보(오브젝트 XY, 사용블록리스트 등등)들 초기화
+                                missionManager.initObject(mode); // 미션 관련된 정보(오브젝트 XY, 사용블록리스트 등등)들 초기화
                             }
                         }
                     };
@@ -182,9 +192,13 @@ public class CodingActivity extends AbstractBlocklyActivity implements CodeEvent
     }
 
     public void openMissionDialog(String mission){
+        Log.i("seo","mode : " + mode);
+        if(mode == null) {
+            Log.i("seo","null");
+            return;
+        }
         MissionDialog dialog = new MissionDialog(this);
         dialog.show();
-
         Window window = dialog.getWindow();
         window.setLayout(ScalableLayout.LayoutParams.MATCH_PARENT, ScalableLayout.LayoutParams.MATCH_PARENT);
         dialog.setDialogConfig(mission);
@@ -303,10 +317,13 @@ public class CodingActivity extends AbstractBlocklyActivity implements CodeEvent
         }
         else{
             String getCategory = getBundle.getString("category", "default/toolbox_all.xml");
-            Log.i("seo","getCategory : " + getCategory);
             String getMission = getBundle.getString("mission", "");
-            MissionManageClass.mission = getMission;
-            openMissionDialog(getMission);
+            String getMode = getBundle.getString("mode", "");
+
+            if(!getMode.equals("barcode")){
+                MissionManageClass.mission = getMission;
+                openMissionDialog(getMission);
+            }
             return getCategory;
         }
     }

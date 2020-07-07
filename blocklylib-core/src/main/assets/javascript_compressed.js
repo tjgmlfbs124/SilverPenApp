@@ -1093,12 +1093,12 @@ Blockly.JavaScript.face_bored_09 = function (a) {
 
 //----------------------------------------------- Mission Block -----------------------------------------------//
 Blockly.JavaScript.hello = function (a) {
-     var string = "definitionArray.push({x:0, y:0, protocol:'ff030023', blockname : 'hello'});\n"
+     var string = "definitionArray.push({x:0, y:0, protocol:'ff03000023', blockname : 'hello'});\n"
     return string;
 };
 
 Blockly.JavaScript.rgb_right_on = function (a) {
-     var string = "definitionArray.push({x:0, y:0, protocol:'ff02fe000023', blockname : 'rgb_right_on'});\n"
+     var string = "definitionArray.push({x:0, y:0, protocol:'ff02fe000023ff0200000023', blockname : 'rgb_right_on'});\n"
     return string;
 };
 
