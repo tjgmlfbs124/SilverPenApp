@@ -19,11 +19,10 @@
         <block type="controls_repeat_ext">
             <value name="TIMES">
                 <shadow type="math_number">
-                    <field name="NUM">10</field>
+                    <field name="NUM">3</field>
                 </shadow>
             </value>
         </block>
         <block type="buzzer_on"></block>
-        <block type="mission_go"></block>
     </category>
 </toolbox>

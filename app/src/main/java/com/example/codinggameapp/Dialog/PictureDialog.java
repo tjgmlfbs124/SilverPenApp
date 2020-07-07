@@ -37,8 +37,8 @@ public class PictureDialog extends BottomSheetDialogFragment{
 
         vibrator.vibrate(200);
 
-        img_barcode = view.findViewById(R.id.img_barcode);
-        txt_barcode = view.findViewById(R.id.txt_barcode);
+//        img_barcode = view.findViewById(R.id.img_barcode);
+//        txt_barcode = view.findViewById(R.id.txt_barcode);
 
         txt_title = view.findViewById(R.id.txt_title);
 //        txt_message01 = view.findViewById(R.id.txt_message01);
@@ -49,8 +49,8 @@ public class PictureDialog extends BottomSheetDialogFragment{
         barcode = getArguments().getString("barcode");
         int imageID = getResources().getIdentifier("barcode"+ barcode,"drawable",getActivity().getPackageName());
 
-        img_barcode.setImageResource(imageID);
-        txt_barcode.setText(barcode + "번 바코드");
+//        img_barcode.setImageResource(imageID);
+//        txt_barcode.setText(barcode + "번 바코드");
         try{
             JSONObject object = new JSONObject(getJsonString());
             object = new JSONObject(object.getString("barcode"+barcode));

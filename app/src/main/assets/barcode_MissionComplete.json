@@ -1,5 +1,5 @@
 {
-  "0101" : {
+  "barcode1" : {
     "x" : 50,
     "y" : 50,
     "minBlock" : 1,
@@ -7,7 +7,7 @@
     "UnnecessaryBlock" : [""],
     "PerfeactBlockList" : [""]
   },
-  "0102" : {
+  "barcode2" : {
     "x" : 50,
     "y" : 53,
     "minBlock" : 3,
@@ -15,7 +15,7 @@
     "UnnecessaryBlock" : [""],
     "PerfeactBlockList" : [""]
   },
-  "0103" : {
+  "barcode3" : {
     "x" : 50,
     "y" : 46,
     "minBlock" : 4,
@@ -23,7 +23,7 @@
     "UnnecessaryBlock" : [""],
     "PerfeactBlockList" : [""]
   },
-  "0104" : {
+  "barcode4" : {
     "x" : 50,
     "y" : 50,
     "minBlock" : 4,
@@ -31,7 +31,7 @@
     "UnnecessaryBlock" : [""],
     "PerfeactBlockList" : [""]
   },
-  "0105" : {
+  "barcode5" : {
     "x" : 50,
     "y" : 50,
     "minBlock" : 4,
@@ -39,15 +39,15 @@
     "UnnecessaryBlock" : [""],
     "PerfeactBlockList" : [""]
   },
-  "0201" : {
-    "x" : 0,
+  "barcode6" : {
+    "x" : 50,
     "y" : 53,
-    "minBlock" : 3,
+    "minBlock" : 1,
     "EssentialBlock" : ["mission_go"],
     "UnnecessaryBlock" : [""],
     "PerfeactBlockList" : [""]
   },
-  "0202" : {
+  "barcode7" : {
     "x" : 50,
     "y" : 50,
     "minBlock" : 4,
@@ -55,7 +55,7 @@
     "UnnecessaryBlock" : [""],
     "PerfeactBlockList" : [""]
   },
-  "0203" : {
+  "barcode8" : {
     "x" : 50,
     "y" : 50,
     "minBlock" : 2,
@@ -63,19 +63,59 @@
     "UnnecessaryBlock" : [""],
     "PerfeactBlockList" : [""]
   },
-  "0204" : {
+  "barcode9" : {
     "x" : 50,
     "y" : 50,
     "minBlock" : 2,
-    "EssentialBlock" : ["rgb_right_on", "mission_go"],
+    "EssentialBlock" : ["rgb_right_on"],
     "UnnecessaryBlock" : [""],
     "PerfeactBlockList" : [""]
   },
-  "0205" : {
+  "barcode10" : {
     "x" : 50,
-    "y" : 50,
+    "y" : 52,
     "minBlock" : 2,
-    "EssentialBlock" : ["buzzer_on", "mission_go"],
+    "EssentialBlock" : ["oneStep_GO"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  },
+  "barcode11" : {
+    "x" : 50,
+    "y" : 54,
+    "minBlock" : 2,
+    "EssentialBlock" : ["twoStep_GO"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  },
+  "barcode12" : {
+    "x" : 50,
+    "y" : 54,
+    "minBlock" : 2,
+    "EssentialBlock" : ["twoStep_GO"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  },
+  "barcode13" : {
+    "x" : 50,
+    "y" : 51,
+    "minBlock" : 2,
+    "EssentialBlock" : ["controls_repeat_ext"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  },
+  "barcode14" : {
+    "x" : 50,
+    "y" : 52,
+    "minBlock" : 2,
+    "EssentialBlock" : ["controls_repeat_ext"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  },
+  "barcode15" : {
+    "x" : 50,
+    "y" : 52,
+    "minBlock" : 2,
+    "EssentialBlock" : ["oneStep_GO"],
     "UnnecessaryBlock" : [""],
     "PerfeactBlockList" : [""]
   }

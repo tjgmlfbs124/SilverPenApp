@@ -82,7 +82,7 @@ public class JoystickActivity extends AppCompatActivity {
                             BluetoothSendManager.sendProtocol("ff23");
                             break;
                         case "eggBean" :
-                            BluetoothSendManager.sendProtocol("ff05040023");
+                            BluetoothSendManager.sendProtocol("ff050423");
                             break;
                         case "camRobot" :
                             BluetoothSendManager.sendProtocol("ff05040023");
@@ -98,6 +98,7 @@ public class JoystickActivity extends AppCompatActivity {
                             BluetoothSendManager.sendProtocol("ff23");
                             break;
                         case "eggBean" :
+                            BluetoothSendManager.sendProtocol("ff050523");
                             break;
                         case "camRobot" :
                             BluetoothSendManager.sendProtocol("ff05000023");
@@ -186,7 +187,7 @@ public class JoystickActivity extends AppCompatActivity {
                                     BluetoothSendManager.sendProtocol("ff23");
                                     break;
                                 case "eggBean" :
-                                    BluetoothSendManager.sendProtocol("ff0400" + DataManager.getJoystickMotorSpeed() + "23");
+                                    BluetoothSendManager.sendProtocol("ff0400" + DataManager.getJoystickMotorSpeed() + "0023");
                                     break;
                                 case "camRobot" :
                                     BluetoothSendManager.sendProtocol("ff0400"+ DataManager.getJoystickMotorSpeed() +"0023");
@@ -199,7 +200,7 @@ public class JoystickActivity extends AppCompatActivity {
                                     BluetoothSendManager.sendProtocol("ff23");
                                     break;
                                 case "eggBean" :
-                                    BluetoothSendManager.sendProtocol("ff0401" + DataManager.getJoystickMotorSpeed() + "23");
+                                    BluetoothSendManager.sendProtocol("ff0401" + DataManager.getJoystickMotorSpeed() + "0023");
                                     break;
                                 case "camRobot" :
                                     BluetoothSendManager.sendProtocol("ff0401" + DataManager.getJoystickMotorSpeed() + "0023");
@@ -212,7 +213,7 @@ public class JoystickActivity extends AppCompatActivity {
                                     BluetoothSendManager.sendProtocol("ff23");
                                     break;
                                 case "eggBean" :
-                                    BluetoothSendManager.sendProtocol("ff0402" + DataManager.getJoystickMotorSpeed() + "23");
+                                    BluetoothSendManager.sendProtocol("ff0402" + DataManager.getJoystickMotorSpeed() + "0023");
                                     break;
                                 case "camRobot" :
                                     BluetoothSendManager.sendProtocol("ff0402"+ DataManager.getJoystickMotorSpeed() + "0023");
@@ -225,7 +226,7 @@ public class JoystickActivity extends AppCompatActivity {
                                     BluetoothSendManager.sendProtocol("ff23");
                                     break;
                                 case "eggBean" :
-                                    BluetoothSendManager.sendProtocol("ff0403" + DataManager.getJoystickMotorSpeed() + "23");
+                                    BluetoothSendManager.sendProtocol("ff0403" + DataManager.getJoystickMotorSpeed() + "0023");
                                     break;
                                 case "camRobot" :
                                     BluetoothSendManager.sendProtocol("ff0403" + DataManager.getJoystickMotorSpeed() + "0023");
@@ -238,7 +239,7 @@ public class JoystickActivity extends AppCompatActivity {
                                     BluetoothSendManager.sendProtocol("ff23");
                                     break;
                                 case "eggBean" :
-                                    BluetoothSendManager.sendProtocol("ff0404" + DataManager.getJoystickMotorSpeed() + "23");
+                                    BluetoothSendManager.sendProtocol("ff0404000023");
                                     break;
                                 case "camRobot" :
                                     BluetoothSendManager.sendProtocol("ff0404000023");
@@ -273,6 +274,20 @@ public class JoystickActivity extends AppCompatActivity {
     }
 
     public static void showPicture(FragmentManager manager, String barcode){
+        try{
+            if(!pictureDialog.isAdded()){
+                Bundle args = new Bundle();
+                args.putString("barcode", barcode);
+                pictureDialog.setArguments(args);
+                pictureDialog.show(manager, "Dialog");
+            }
+        }catch (Exception e){
+            Log.i("seo","Error  :"  + e);
+        }
+
+    }
+
+    public static void addNaviCount(FragmentManager manager, String barcode){
         try{
             if(!pictureDialog.isAdded()){
                 Bundle args = new Bundle();

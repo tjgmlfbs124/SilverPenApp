@@ -127,7 +127,9 @@ public class BluetoothSendManager {
                 public void onCharacteristicChanged(byte[] data) {
                     String str = new String(data, Charset.forName("UTF-8"));
                     Log.i("@ckw", "barcode: "+str);
-                    JoystickActivity.showPicture(activity.getSupportFragmentManager(), str);
+                    if(!str.equals("resp"))
+//                        JoystickActivity.showPicture(activity.getSupportFragmentManager(), str);
+                        JoystickActivity.addNaviCount(str);
 
                 }
             });

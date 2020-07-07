@@ -1093,47 +1093,148 @@ Blockly.JavaScript.face_bored_09 = function (a) {
 
 //----------------------------------------------- Mission Block -----------------------------------------------//
 Blockly.JavaScript.hello = function (a) {
-     var string = "definitionArray.push({x:0, y:0, protocol:'ff03000023', blockname : 'hello'});\n"
+     var string;
+     switch(BlocklyJavascriptInterface.getConnectRobot()){
+          case "weeemake" :
+              string = "definitionArray.push({x:0, y:0, protocol:'', blockname : 'hello'});\n"
+              break;
+          case "eggBean" :
+              string = "definitionArray.push({x:0, y:0, protocol:'ff03000023', blockname : 'hello'});\n"
+              break;
+          case "camRobot" :
+              string = "definitionArray.push({x:0, y:0, protocol:'ff093000023', blockname : 'hello'});\n"
+              break;
+      }
+
     return string;
 };
 
 Blockly.JavaScript.rgb_right_on = function (a) {
-     var string = "definitionArray.push({x:0, y:0, protocol:'ff02fe000023ff0200000023', blockname : 'rgb_right_on'});\n"
+     var string ;
+     switch(BlocklyJavascriptInterface.getConnectRobot()){
+           case "weeemake" :
+               string = "definitionArray.push({x:0, y:0, protocol:'', blockname : 'rgb_right_on'});\n"
+               break;
+           case "eggBean" :
+               string = "definitionArray.push({x:0, y:0, protocol:'ff02fe000023ff010123ff0200000023', blockname : 'rgb_right_on'});\n"
+               break;
+           case "camRobot" :
+               string = "definitionArray.push({x:0, y:0, protocol:'ff02fe000023ff010123ff0200000023', blockname : 'rgb_right_on'});\n"
+               break;
+      }
     return string;
 };
 
 Blockly.JavaScript.buzzer_on = function (a) {
-     var string = "definitionArray.push({x:0, y:0, protocol:'ff05020523', blockname : 'buzzer_on'});\n"
+     var string ;
+     switch(BlocklyJavascriptInterface.getConnectRobot()){
+           case "weeemake" :
+               string = "definitionArray.push({x:0, y:0, protocol:'', blockname : 'buzzer_on'});\n"
+               break;
+           case "eggBean" :
+               string = "definitionArray.push({x:0, y:0, protocol:'ff05020523', blockname : 'buzzer_on'});\n"
+               break;
+           case "camRobot" :
+               string = "definitionArray.push({x:0, y:0, protocol:'ff05020523', blockname : 'buzzer_on'});\n"
+               break;
+     }
     return string;
 };
 
 Blockly.JavaScript.oneStep_GO = function (a) {
-     var string = "definitionArray.push({x:0, y:1, protocol:'ff04005f0123', blockname : 'oneStep_GO'});\n"
+     var string ;
+     switch(BlocklyJavascriptInterface.getConnectRobot()){
+           case "weeemake" :
+               string = "definitionArray.push({x:0, y:1, protocol:'ff04005f0123', blockname : 'oneStep_GO'});\n"
+               break;
+           case "eggBean" :
+               string = "definitionArray.push({x:0, y:1, protocol:'ff04005f0123', blockname : 'oneStep_GO'});\n"
+               break;
+           case "camRobot" :
+               string = "definitionArray.push({x:0, y:1, protocol:'ff04005f23ff010123ff040423', blockname : 'oneStep_GO'});\n"
+               break;
+     }
     return string;
 };
 
 Blockly.JavaScript.twoStep_GO = function (a) {
-     var string = "definitionArray.push({x:0, y:2, protocol:'ff020223', blockname : 'buzzer_on'});\n"
+     var string ;
+     switch(BlocklyJavascriptInterface.getConnectRobot()){
+           case "weeemake" :
+               string = "definitionArray.push({x:0, y:2, protocol:'', blockname : 'buzzer_on'});\n"
+               break;
+           case "eggBean" :
+               string = "definitionArray.push({x:0, y:2, protocol:'ff04005f0123ff04005f0123', blockname : 'buzzer_on'});\n"
+               break;
+           case "camRobot" :
+               string = "definitionArray.push({x:0, y:2, protocol:'ff04005f23ff010123ff040423ff04005f23ff010123ff040423', blockname : 'buzzer_on'});\n"
+               break;
+     }
     return string;
 };
 
 Blockly.JavaScript.threeStep_GO = function (a) {
-     var string = "definitionArray.push({x:0, y:3, protocol:'ff020323', blockname : 'buzzer_on'});\n"
+     var string ;
+     switch(BlocklyJavascriptInterface.getConnectRobot()){
+           case "weeemake" :
+               string = "definitionArray.push({x:0, y:3, protocol:'', blockname : 'buzzer_on'});\n"
+               break;
+           case "eggBean" :
+               string = "definitionArray.push({x:0, y:3, protocol:'ff04005f0123ff04005f0123ff04005f0123', blockname : 'buzzer_on'});\n"
+               break;
+           case "camRobot" :
+               string = "definitionArray.push({x:0, y:3, protocol:'ff04005f23ff010123ff040423ff04005f23ff010123ff040423ff04005f23ff010123ff040423', blockname : 'buzzer_on'});\n"
+               break;
+     }
     return string;
 };
 
 Blockly.JavaScript.oneStep_BACK = function (a) {
-     var string = "definitionArray.push({x:0, y:-1, protocol:'ff030123', blockname : 'buzzer_on'});\n"
+     var string = "definitionArray.push({x:0, y:-1, protocol:'ff04005f0123', blockname : 'buzzer_on'});\n"
+     var string ;
+     switch(BlocklyJavascriptInterface.getConnectRobot()){
+           case "weeemake" :
+               string = "definitionArray.push({x:0, y:-1, protocol:'', blockname : 'buzzer_on'});\n"
+               break;
+           case "eggBean" :
+               string = "definitionArray.push({x:0, y:-1, protocol:'ff04015f0123', blockname : 'buzzer_on'});\n"
+               break;
+           case "camRobot" :
+               string = "definitionArray.push({x:0, y:-1, protocol:'ff04015f23ff010123ff040423', blockname : 'buzzer_on'});\n"
+               break;
+     }
     return string;
 };
 
 Blockly.JavaScript.twoStep_BACK = function (a) {
-     var string = "definitionArray.push({x:0, y:-2, protocol:'ff030223', blockname : 'buzzer_on'});\n"
+     var string ;
+     switch(BlocklyJavascriptInterface.getConnectRobot()){
+           case "weeemake" :
+               string = "definitionArray.push({x:0, y:-2, protocol:'', blockname : 'buzzer_on'});\n"
+               break;
+           case "eggBean" :
+               string = "definitionArray.push({x:0, y:-2, protocol:'ff04015f0123ff04015f0123', blockname : 'buzzer_on'});\n"
+               break;
+           case "camRobot" :
+               string = "definitionArray.push({x:0, y:-2, protocol:'ff04015f23ff010123ff040423ff04015f23ff010123ff040423', blockname : 'buzzer_on'});\n"
+               break;
+     }
     return string;
 };
 
 Blockly.JavaScript.threeStep_BACK = function (a) {
-     var string = "definitionArray.push({x:0, y:-3, protocol:'ff030323', blockname : 'buzzer_on'});\n"
+    var string ;
+    switch(BlocklyJavascriptInterface.getConnectRobot()){
+       case "weeemake" :
+           string = "definitionArray.push({x:0, y:-3, protocol:'', blockname : 'buzzer_on'});\n"
+           break;
+       case "eggBean" :
+           string = "definitionArray.push({x:0, y:-3, protocol:'ff04015f0123ff04015f0123ff04015f0123', blockname : 'buzzer_on'});\n"
+           break;
+       case "camRobot" :
+           string = "definitionArray.push({x:0, y:-3, protocol:'ff04015f23ff010123ff040423ff04015f23ff010123ff040423ff04015f23ff010123ff040423', blockname : 'buzzer_on'});\n"
+           break;
+    }
     return string;
 };
 
@@ -1159,7 +1260,7 @@ Blockly.JavaScript.mission_back = function (a) { // BLOCK CODE - # 1003
 };
 
 Blockly.JavaScript.mission_stop = function (a) { // BLOCK CODE - # 1003
-     var string = "definitionArray.push({x:0, y:0, protocol:'ff040040023', blockname : 'mission_stop'});\n"
+     var string = "definitionArray.push({x:0, y:0, protocol:'ff0404sssss23', blockname : 'mission_stop'});\n"
 };
 
 

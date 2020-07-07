@@ -103,6 +103,17 @@
                 app:scale_width="900">
             </LinearLayout>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:scale_height="200"
+                app:scale_left="0"
+                app:scale_top="1040"
+                app:scale_width="900"
+                android:background="#3cffffff"/>
+
+
+
         </com.example.codinggameapp.Utils.ScalableLayout>
     </ScrollView>
 </LinearLayout>

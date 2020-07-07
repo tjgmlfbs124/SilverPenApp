@@ -47,39 +47,16 @@
             android:text="미션이 도착했습니다."
             android:gravity="center|left"/>
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/img_barcode"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:scale_height="280"
-            app:scale_left="150"
-            app:scale_top="200"
-            app:scale_width="360"/>
-
-        <TextView
-            android:id="@+id/txt_barcode"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:scale_height="100"
-            app:scale_left="150"
-            app:scale_top="480"
-            app:scale_width="360"
-            app:scale_textsize="40"
-            android:textColor="#303030"
-            android:fontFamily="@font/nixgonf_bold"
-            android:text="바코드 -번"
-            android:gravity="center"/>
-
 
         <TextView
             android:id="@+id/txt_title"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:scale_height="60"
-            app:scale_left="580"
+            app:scale_height="80"
+            app:scale_left="150"
             app:scale_top="200"
-            app:scale_width="700"
-            app:scale_textsize="40"
+            app:scale_width="1000"
+            app:scale_textsize="60"
             android:textColor="#303030"
             android:fontFamily="@font/nixgonf_bold"
             android:text="미션 -"
@@ -90,14 +67,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:scale_height="150"
-            app:scale_left="600"
+            app:scale_left="150"
             app:scale_top="300"
-            app:scale_width="680"
-            app:scale_textsize="35"
+            app:scale_width="1000"
+            app:scale_textsize="50"
             android:textColor="#404040"
             android:fontFamily="@font/nixgonf_bold"
             android:text="미션 -"
-            android:gravity="center|left"/>
+            android:gravity="left|top"/>
 
         <TextView
             android:id="@+id/btn_missionOk"

@@ -23,6 +23,7 @@
                 </shadow>
             </value>
         </block>
+        <block type="oneStep_GO"></block>>
         <block type="twoStep_GO"></block>
         <block type="oneStep_BACK"></block>
     </category>

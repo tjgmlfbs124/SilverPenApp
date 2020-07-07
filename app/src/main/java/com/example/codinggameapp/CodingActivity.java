@@ -135,7 +135,7 @@ public class CodingActivity extends AbstractBlocklyActivity implements CodeEvent
                                 AlertDialog.Builder builder = new AlertDialog.Builder(CodingActivity.this);
                                 builder.setTitle("알림");
 
-//                                if(missionClearLevel != 0){ // 정답. 서버로 점수 전송
+                                if(missionClearLevel != 0){ // 정답. 서버로 점수 전송
                                     new requestMissionResult().execute("http://" + DataManager.connectURL + "/submitMission");
                                     builder.setMessage("다음으로 넘어가볼까?");
                                     builder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
@@ -143,6 +143,10 @@ public class CodingActivity extends AbstractBlocklyActivity implements CodeEvent
                                         public void onClick(DialogInterface dialog, int which) {
                                             if(mode.equals("barcode")){
                                                 Intent intent = new Intent(CodingActivity.this, JoystickActivity.class);
+                                                startActivity(intent);
+                                            }
+                                            else {
+                                                Intent intent = new Intent(CodingActivity.this, MissionListActivity.class);
                                                 startActivity(intent);
                                             }
                                             // 다음
@@ -154,16 +158,16 @@ public class CodingActivity extends AbstractBlocklyActivity implements CodeEvent
                                             finish();
                                         }
                                     });
-//                                }
-//                                else{ // 오답
-//                                    builder.setMessage("틀렸어요 ! \n 다시한번 생각해봅시다.");
-//                                    builder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
-//                                        @Override
-//                                        public void onClick(DialogInterface dialog, int which) {
-//                                            onClearWorkspace();
-//                                        }
-//                                    });
-//                                }
+                                }
+                                else{ // 오답
+                                    builder.setMessage("틀렸어요 ! \n 다시한번 생각해봅시다.");
+                                    builder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+                                        @Override
+                                        public void onClick(DialogInterface dialog, int which) {
+                                            onClearWorkspace();
+                                        }
+                                    });
+                                }
                                 isRun = false;
                                 builder.show();
                                 m_handler.removeCallbacks(m_handlerTask);
@@ -192,11 +196,8 @@ public class CodingActivity extends AbstractBlocklyActivity implements CodeEvent
     }
 
     public void openMissionDialog(String mission){
-        Log.i("seo","mode : " + mode);
-        if(mode == null) {
-            Log.i("seo","null");
+        if(mode != null)
             return;
-        }
         MissionDialog dialog = new MissionDialog(this);
         dialog.show();
         Window window = dialog.getWindow();
@@ -319,7 +320,7 @@ public class CodingActivity extends AbstractBlocklyActivity implements CodeEvent
             String getCategory = getBundle.getString("category", "default/toolbox_all.xml");
             String getMission = getBundle.getString("mission", "");
             String getMode = getBundle.getString("mode", "");
-
+            Log.i("seo","getMode : " + getMode);
             if(!getMode.equals("barcode")){
                 MissionManageClass.mission = getMission;
                 openMissionDialog(getMission);

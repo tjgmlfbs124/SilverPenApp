@@ -23,7 +23,8 @@
                 </shadow>
             </value>
         </block>
-        <block type="threeStep_GO"></block>
-        <block type="twoStep_BACK"></block>
+        <block type="oneStep_GO"></block>
+        <block type="twoStep_GO"></block>
+        <block type="threeStep_BACK"></block>
     </category>
 </toolbox>

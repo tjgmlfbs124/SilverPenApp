@@ -40,9 +40,9 @@
     "PerfeactBlockList" : [""]
   },
   "0201" : {
-    "x" : 0,
+    "x" : 50,
     "y" : 53,
-    "minBlock" : 3,
+    "minBlock" : 1,
     "EssentialBlock" : ["mission_go"],
     "UnnecessaryBlock" : [""],
     "PerfeactBlockList" : [""]
@@ -67,15 +67,87 @@
     "x" : 50,
     "y" : 50,
     "minBlock" : 2,
-    "EssentialBlock" : ["rgb_right_on", "mission_go"],
+    "EssentialBlock" : ["rgb_right_on"],
     "UnnecessaryBlock" : [""],
     "PerfeactBlockList" : [""]
   },
-  "0205" : {
+  "0301" : {
     "x" : 50,
-    "y" : 50,
+    "y" : 52,
     "minBlock" : 2,
-    "EssentialBlock" : ["buzzer_on", "mission_go"],
+    "EssentialBlock" : ["oneStep_GO"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  },
+  "0302" : {
+    "x" : 50,
+    "y" : 54,
+    "minBlock" : 2,
+    "EssentialBlock" : ["twoStep_GO"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  },
+  "0303" : {
+    "x" : 50,
+    "y" : 54,
+    "minBlock" : 2,
+    "EssentialBlock" : ["twoStep_GO"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  },
+  "0304" : {
+    "x" : 50,
+    "y" : 51,
+    "minBlock" : 2,
+    "EssentialBlock" : ["controls_repeat_ext"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  },
+  "0305" : {
+    "x" : 50,
+    "y" : 52,
+    "minBlock" : 2,
+    "EssentialBlock" : ["controls_repeat_ext"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  },
+  "0301" : {
+    "x" : 50,
+    "y" : 52,
+    "minBlock" : 2,
+    "EssentialBlock" : ["oneStep_GO"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  },
+  "0302" : {
+    "x" : 50,
+    "y" : 54,
+    "minBlock" : 2,
+    "EssentialBlock" : ["twoStep_GO"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  },
+  "0303" : {
+    "x" : 50,
+    "y" : 54,
+    "minBlock" : 2,
+    "EssentialBlock" : ["twoStep_GO"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  },
+  "0304" : {
+    "x" : 50,
+    "y" : 51,
+    "minBlock" : 2,
+    "EssentialBlock" : ["controls_repeat_ext"],
+    "UnnecessaryBlock" : [""],
+    "PerfeactBlockList" : [""]
+  },
+  "0305" : {
+    "x" : 50,
+    "y" : 52,
+    "minBlock" : 2,
+    "EssentialBlock" : ["controls_repeat_ext"],
     "UnnecessaryBlock" : [""],
     "PerfeactBlockList" : [""]
   }

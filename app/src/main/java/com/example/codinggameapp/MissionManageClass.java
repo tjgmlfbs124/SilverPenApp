@@ -92,6 +92,7 @@ public class MissionManageClass {
     }
 
     private static boolean checkCompleteBlockIndex(int minBlockIndex){
+        Log.i("seo","runBlock.size() : " + runBlock.size());
         if(runBlock.size() <= minBlockIndex) return true;
         else return false;
     }

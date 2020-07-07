@@ -87,7 +87,7 @@
                 app:scale_width="900"
                 android:textColor="#1a1a1a"
                 android:fontFamily="@font/nixgonf_bold"
-                android:text="숫자 3까지!"
+                android:text="숫자 4까지!"
                 app:scale_textsize="100"/>
 
             <androidx.appcompat.widget.AppCompatImageView
@@ -136,7 +136,7 @@
                 app:scale_width="900"
                 android:textColor="#1a1a1a"
                 android:fontFamily="@font/nixgonf_bold"
-                android:text="반복! 숫자 3까지!"
+                android:text="반복으로 숫자 4까지!"
                 app:scale_textsize="100"/>
 
             <androidx.appcompat.widget.AppCompatImageView
