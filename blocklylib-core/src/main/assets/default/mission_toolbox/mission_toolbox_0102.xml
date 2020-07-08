@@ -16,6 +16,6 @@
 <!-- toolbox1 => level1 -->
 <toolbox>
     <category name="블록" colour="#000000">
-        <block type="mission_go"></block>
+        <block type="oneStep_GO"></block>
     </category>
 </toolbox>

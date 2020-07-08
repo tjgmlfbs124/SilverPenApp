@@ -1151,7 +1151,7 @@ Blockly.JavaScript.oneStep_GO = function (a) {
                string = "definitionArray.push({x:0, y:1, protocol:'ff04005f0123', blockname : 'oneStep_GO'});\n"
                break;
            case "camRobot" :
-               string = "definitionArray.push({x:0, y:1, protocol:'ff04005f23ff010123ff040423', blockname : 'oneStep_GO'});\n"
+               string = "definitionArray.push({x:0, y:1, protocol:'ff04009623ff010123ff040423', blockname : 'oneStep_GO'});\n"
                break;
      }
     return string;
