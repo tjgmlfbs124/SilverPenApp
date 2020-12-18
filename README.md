@@ -6,7 +6,7 @@
 - 블루투스를 통해 로봇을 제어할수 있는 컨트롤러 ui 제공
 
 ## 개발개요
-- Application Name : "??"
+- Application Name : "실버펜"
 - Develop Tool : Android Studio
 - compileSdk Version : 29
 - minSDK Version : 21
