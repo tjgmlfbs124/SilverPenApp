@@ -958,7 +958,7 @@ Blockly.JavaScript.face_bored_01 = function (a) {
              string = "definitionArray.push({x:0, y:0, protocol:'ff0600000023', blockname : 'face_bored_01'});\n"
              break;
          case "eggBean" :
-             string = "definitionArray.push({x:0, y:0, protocol:'ff0600000023', blockname : 'face_bored_01'});\n"
+             string = "definitionArray.push({x:0, y:0, protocol:'ff0700000023', blockname : 'face_bored_01'});\n"
              break;
          case "camRobot" :
              string = "definitionArray.push({x:0, y:0, protocol:'ff0700000023', blockname : 'face_bored_01'});\n"
@@ -974,7 +974,7 @@ Blockly.JavaScript.face_bored_02 = function (a) {
              string = "definitionArray.push({x:0, y:0, protocol:'ff0601000023', blockname : 'face_bored_02'});\n"
              break;
          case "eggBean" :
-             string = "definitionArray.push({x:0, y:0, protocol:'ff0601000023', blockname : 'face_bored_02'});\n"
+             string = "definitionArray.push({x:0, y:0, protocol:'ff0701000023', blockname : 'face_bored_02'});\n"
              break;
          case "camRobot" :
              string = "definitionArray.push({x:0, y:0, protocol:'ff0701000023', blockname : 'face_bored_02'});\n"
@@ -989,7 +989,7 @@ Blockly.JavaScript.face_bored_03 = function (a) {
              string = "definitionArray.push({x:0, y:0, protocol:'ff0602000023', blockname : 'face_bored_03'});\n"
              break;
          case "eggBean" :
-             string = "definitionArray.push({x:0, y:0, protocol:'ff0602000023', blockname : 'face_bored_03'});\n"
+             string = "definitionArray.push({x:0, y:0, protocol:'ff0702000023', blockname : 'face_bored_03'});\n"
              break;
          case "camRobot" :
              string = "definitionArray.push({x:0, y:0, protocol:'ff0702000023', blockname : 'face_bored_03'});\n"
@@ -1004,7 +1004,7 @@ Blockly.JavaScript.face_bored_04 = function (a) {
              string = "definitionArray.push({x:0, y:0, protocol:'ff0603000023', blockname : 'face_bored_04'});\n"
              break;
          case "eggBean" :
-             string = "definitionArray.push({x:0, y:0, protocol:'ff0603000023', blockname : 'face_bored_04'});\n"
+             string = "definitionArray.push({x:0, y:0, protocol:'ff0703000023', blockname : 'face_bored_04'});\n"
              break;
          case "camRobot" :
              string = "definitionArray.push({x:0, y:0, protocol:'ff0703000023', blockname : 'face_bored_04'});\n"
@@ -1019,7 +1019,7 @@ Blockly.JavaScript.face_bored_05 = function (a) {
              string = "definitionArray.push({x:0, y:0, protocol:'ff0604000023', blockname : 'face_bored_05'});\n"
              break;
          case "eggBean" :
-             string = "definitionArray.push({x:0, y:0, protocol:'ff0604000023', blockname : 'face_bored_05'});\n"
+             string = "definitionArray.push({x:0, y:0, protocol:'ff0704000023', blockname : 'face_bored_05'});\n"
              break;
          case "camRobot" :
              string = "serialArr.push('ff07" + "04" + "000023');"
@@ -1035,7 +1035,7 @@ Blockly.JavaScript.face_bored_06 = function (a) {
              string = "definitionArray.push({x:0, y:0, protocol:'ff0605000023', blockname : 'face_bored_06'});\n"
              break;
          case "eggBean" :
-             string = "definitionArray.push({x:0, y:0, protocol:'ff0605000023', blockname : 'face_bored_06'});\n"
+             string = "definitionArray.push({x:0, y:0, protocol:'ff0705000023', blockname : 'face_bored_06'});\n"
              break;
          case "camRobot" :
              string = "definitionArray.push({x:0, y:0, protocol:'ff0705000023', blockname : 'face_bored_06'});\n"
@@ -1050,7 +1050,7 @@ Blockly.JavaScript.face_bored_07 = function (a) {
              string = "definitionArray.push({x:0, y:0, protocol:'ff0606000023', blockname : 'face_bored_07'});\n"
              break;
          case "eggBean" :
-             string = "definitionArray.push({x:0, y:0, protocol:'ff0606000023', blockname : 'face_bored_07'});\n"
+             string = "definitionArray.push({x:0, y:0, protocol:'ff0706000023', blockname : 'face_bored_07'});\n"
              break;
          case "camRobot" :
              string = "definitionArray.push({x:0, y:0, protocol:'ff0706000023', blockname : 'face_bored_07'});\n"
@@ -1065,7 +1065,7 @@ Blockly.JavaScript.face_bored_08 = function (a) {
              string = "definitionArray.push({x:0, y:0, protocol:'ff0607000023', blockname : 'face_bored_08'});\n"
              break;
          case "eggBean" :
-             string = "definitionArray.push({x:0, y:0, protocol:'ff0607000023', blockname : 'face_bored_08'});\n"
+             string = "definitionArray.push({x:0, y:0, protocol:'ff0707000023', blockname : 'face_bored_08'});\n"
              break;
          case "camRobot" :
              string = "definitionArray.push({x:0, y:0, protocol:'ff0707000023', blockname : 'face_bored_08'});\n"

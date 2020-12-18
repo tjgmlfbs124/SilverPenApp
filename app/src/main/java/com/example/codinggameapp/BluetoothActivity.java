@@ -175,6 +175,10 @@ public class BluetoothActivity extends AppCompatActivity {
                             BleManager.getInstance().cancelScan();
                             connect(bleDevice, "eggBean");
                         }
+                        else if(bleDevice.getName().contains("07") && !BleManager.getInstance().isConnected(bleDevice)){
+                            BleManager.getInstance().cancelScan();
+                            connect(bleDevice, "eggBean");
+                        }
 //                        else if(bleDevice.getName().contains("unityBLE") && !BleManager.getInstance().isConnected(bleDevice)){
 //                            BleManager.getInstance().cancelScan();
 //                            connect(bleDevice, "camRobot");
